@@ -1,0 +1,1541 @@
+2024-08-19 13:22:54 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-19 13:22:54 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Starting KlbProjectApplication using Java 17.0.12 with PID 14780 (C:\Users\ADMIN\IdeaProjects\KLB-project\KLB-project\target\classes started by ADMIN in C:\Users\ADMIN\IdeaProjects\KLB-project)
+2024-08-19 13:22:54 INFO  com.KLBproject.KLB_project.KlbProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-19 13:22:55 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-19 13:22:55 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 8 JPA repository interfaces.
+2024-08-19 13:22:56 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 9191 (http)
+2024-08-19 13:22:56 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9191"]
+2024-08-19 13:22:56 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-19 13:22:56 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-19 13:22:56 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-19 13:22:56 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1677 ms
+2024-08-19 13:22:56 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-19 13:22:56 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-19 13:22:56 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-19 13:22:57 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-19 13:22:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-19 13:22:57 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6aae82cc
+2024-08-19 13:22:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-19 13:22:57 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-19 13:22:58 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-19 13:22:58 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-19 13:22:59 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Filter 'logFilter' configured for use
+2024-08-19 13:22:59 INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-08-19 13:22:59 WARN  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-08-19 13:22:59 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-19 13:23:00 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9191"]
+2024-08-19 13:23:00 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 9191 (http) with context path '/'
+2024-08-19 13:23:00 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Started KlbProjectApplication in 5.859 seconds (process running for 6.906)
+2024-08-19 13:24:04 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-19 13:24:04 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-19 13:24:04 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-08-19 13:24:04 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 2d1bca54-043a-434e-afed-f5961ba8afee
+[PATH]: /api/v1/users/add
+[QUERIES]: null
+[HEADERS]: 
+---user-agent : PostmanRuntime/7.41.0
+---accept : */*
+---postman-token : 007a895c-3d22-4dad-b251-7215322dbe1f
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---cookie : JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 13:24:04 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /api/v1/users/add]
+2024-08-19 13:24:04 WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-08-19 13:24:04 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/v1/users/add]
+2024-08-19 13:24:05 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[GET] path=[/error] responseHeaders=[{X-Frame-Options=DENY, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, X-Content-Type-Options=nosniff, Vary=Origin, Pragma=no-cache, Expires=0, X-XSS-Protection=0, Allow=POST}] responseBody=[{
+  "timestamp" : 1724048645039,
+  "status" : 405,
+  "error" : "Method Not Allowed",
+  "path" : "/api/v1/users/add"
+}]
+2024-08-19 13:25:35 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 745ec08e-3161-4d1c-8842-b5b03e0bb765
+[PATH]: /api/v1/users/add
+[QUERIES]: null
+[HEADERS]: 
+---content-type : application/json
+---user-agent : PostmanRuntime/7.41.0
+---accept : */*
+---postman-token : dfe728c9-fc93-4639-8faa-e61480b7fb9a
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---content-length : 110
+---cookie : JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 13:25:35 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /api/v1/users/add]
+2024-08-19 13:25:35 WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-08-19 13:25:35 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/v1/users/add]
+2024-08-19 13:25:35 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[GET] path=[/error] responseHeaders=[{X-Frame-Options=DENY, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, X-Content-Type-Options=nosniff, Vary=Origin, Pragma=no-cache, Expires=0, X-XSS-Protection=0, Allow=POST}] responseBody=[{
+  "timestamp" : 1724048735659,
+  "status" : 405,
+  "error" : "Method Not Allowed",
+  "path" : "/api/v1/users/add"
+}]
+2024-08-19 13:25:55 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 2dce8648-350d-4623-a03e-e84bc6fc8e0b
+[PATH]: /api/v1/users/add
+[QUERIES]: null
+[HEADERS]: 
+---content-type : application/json
+---user-agent : PostmanRuntime/7.41.0
+---accept : */*
+---postman-token : 1aaf73a1-bdc7-46d3-a839-4708ef4cdf14
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---content-length : 110
+---cookie : JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 13:25:55 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [POST /api/v1/users/add]
+2024-08-19 13:25:55 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - REQUEST method=[POST] path=[/api/v1/users/add] headers=[{content-length=110, cookie=JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235, postman-token=1aaf73a1-bdc7-46d3-a839-4708ef4cdf14, host=localhost:9191, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.41.0, accept=*/*}] body=[{
+  "firstName" : null,
+  "lastName" : null,
+  "email" : "email@email.com",
+  "password" : "123456"
+}]
+2024-08-19 13:25:55 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[POST] path=[/api/v1/users/add] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "message" : "Create User Success!",
+  "data" : {
+    "id" : 8,
+    "firstName" : null,
+    "lastName" : null,
+    "email" : "email@email.com",
+    "orders" : null,
+    "cart" : null
+  }
+}]
+2024-08-19 13:25:55 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/v1/users/add, payload={
+    "firstname":"Minh",
+    "lastname":"Minh",
+    "email":"email@email.com",
+    "password":"123456"
+}]
+2024-08-19 13:31:49 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 81e2e326-fdef-42ab-8cc9-bceb98a069bd
+[PATH]: /api/v1/users/add
+[QUERIES]: null
+[HEADERS]: 
+---content-type : application/json
+---user-agent : PostmanRuntime/7.41.0
+---accept : */*
+---postman-token : b3059739-668d-473b-8f74-baec4449e483
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---content-length : 111
+---cookie : JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 13:31:49 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [POST /api/v1/users/add]
+2024-08-19 13:31:49 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - REQUEST method=[POST] path=[/api/v1/users/add] headers=[{content-length=111, cookie=JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235, postman-token=b3059739-668d-473b-8f74-baec4449e483, host=localhost:9191, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.41.0, accept=*/*}] body=[{
+  "firstName" : "Minh",
+  "lastName" : "Minh",
+  "email" : "email2@email.com",
+  "password" : "123456"
+}]
+2024-08-19 13:31:49 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[POST] path=[/api/v1/users/add] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "message" : "Create User Success!",
+  "data" : {
+    "id" : 9,
+    "firstName" : "Minh",
+    "lastName" : "Minh",
+    "email" : "email2@email.com",
+    "orders" : null,
+    "cart" : null
+  }
+}]
+2024-08-19 13:31:49 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/v1/users/add, payload={
+    "firstName":"Minh",
+    "lastName":"Minh",
+    "email":"email2@email.com",
+    "password":"123456"
+}]
+2024-08-19 13:33:43 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-19 13:33:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-19 13:33:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-19 16:22:01 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-19 16:22:01 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Starting KlbProjectApplication using Java 17.0.12 with PID 19124 (C:\Users\ADMIN\IdeaProjects\KLB-project\KLB-project\target\classes started by ADMIN in C:\Users\ADMIN\IdeaProjects\KLB-project)
+2024-08-19 16:22:01 INFO  com.KLBproject.KLB_project.KlbProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-19 16:22:02 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-19 16:22:02 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 8 JPA repository interfaces.
+2024-08-19 16:22:03 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 9191 (http)
+2024-08-19 16:22:03 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9191"]
+2024-08-19 16:22:03 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-19 16:22:03 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-19 16:22:03 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-19 16:22:03 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2041 ms
+2024-08-19 16:22:03 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-19 16:22:03 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-19 16:22:03 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-19 16:22:03 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-19 16:22:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-19 16:22:04 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10d49900
+2024-08-19 16:22:04 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-19 16:22:04 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-19 16:22:05 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-19 16:22:05 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-19 16:22:06 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Filter 'logFilter' configured for use
+2024-08-19 16:22:06 INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-08-19 16:22:06 WARN  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-08-19 16:22:06 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-19 16:22:07 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9191"]
+2024-08-19 16:22:07 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 9191 (http) with context path '/'
+2024-08-19 16:22:07 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Started KlbProjectApplication in 6.741 seconds (process running for 8.6)
+2024-08-19 16:26:54 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-19 16:26:54 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-19 16:26:54 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-08-19 16:26:54 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 5a41cc0a-a8c5-482c-876e-01b97f2eaa38
+[PATH]: /api/v1/products/all
+[QUERIES]: null
+[HEADERS]: 
+---accept-language : fr
+---user-agent : PostmanRuntime/7.41.0
+---accept : */*
+---postman-token : 65b7e457-f15c-46f1-a6c8-bbbed9de9df5
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---cookie : JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 16:26:54 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /api/v1/products/all]
+2024-08-19 16:26:54 INFO  com.KLBproject.KLB_project.controller.ProductController - Task started.
+2024-08-19 16:26:54 INFO  com.KLBproject.KLB_project.controller.ProductController - Task finished.
+2024-08-19 16:26:54 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[GET] path=[/api/v1/products/all] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "message" : "obtenir tous les produits avec succès",
+  "data" : [ {
+    "id" : 1,
+    "name" : "Samsung TV2",
+    "brand" : "Samsung",
+    "price" : 520.00,
+    "inventory" : 50,
+    "description" : "Samsung smart TV2",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ {
+      "id" : 1,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/1"
+    }, {
+      "id" : 2,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/2"
+    }, {
+      "id" : 3,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/3"
+    }, {
+      "id" : 4,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/4"
+    } ]
+  }, {
+    "id" : 2,
+    "name" : "Samsung TV3",
+    "brand" : "Samsung",
+    "price" : 500.00,
+    "inventory" : 40,
+    "description" : "Samsung smart TV3",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 3,
+    "name" : "Apple TV 1",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 5,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 4,
+    "name" : "Apple TV 15",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 10,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  } ]
+}]
+2024-08-19 16:26:54 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/v1/products/all]
+2024-08-19 16:28:27 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: de4b4474-f997-44d9-8d9b-28e90cca4cfa
+[PATH]: /api/v1/products/all
+[QUERIES]: null
+[HEADERS]: 
+---accept-language : vi
+---user-agent : PostmanRuntime/7.41.0
+---accept : */*
+---postman-token : 2c0d1f51-6c46-4028-8efe-9f33eb168022
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---cookie : JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 16:28:27 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /api/v1/products/all]
+2024-08-19 16:28:27 INFO  com.KLBproject.KLB_project.controller.ProductController - Task started.
+2024-08-19 16:28:27 INFO  com.KLBproject.KLB_project.controller.ProductController - Task finished.
+2024-08-19 16:28:28 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[GET] path=[/api/v1/products/all] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "message" : "Lấy thông tin tất cả sản phẩm thành công",
+  "data" : [ {
+    "id" : 1,
+    "name" : "Samsung TV2",
+    "brand" : "Samsung",
+    "price" : 520.00,
+    "inventory" : 50,
+    "description" : "Samsung smart TV2",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ {
+      "id" : 1,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/1"
+    }, {
+      "id" : 2,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/2"
+    }, {
+      "id" : 3,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/3"
+    }, {
+      "id" : 4,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/4"
+    } ]
+  }, {
+    "id" : 2,
+    "name" : "Samsung TV3",
+    "brand" : "Samsung",
+    "price" : 500.00,
+    "inventory" : 40,
+    "description" : "Samsung smart TV3",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 3,
+    "name" : "Apple TV 1",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 5,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 4,
+    "name" : "Apple TV 15",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 10,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  } ]
+}]
+2024-08-19 16:28:28 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/v1/products/all]
+2024-08-19 16:29:34 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: b108b708-d5f3-446f-9710-b92f7c71f171
+[PATH]: /api/v1/products/all
+[QUERIES]: null
+[HEADERS]: 
+---accept-language : fr
+---user-agent : PostmanRuntime/7.41.0
+---accept : */*
+---postman-token : 8db1725b-2f5d-476f-aea4-4a956cb7f9c8
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---cookie : JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 16:29:34 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /api/v1/products/all]
+2024-08-19 16:29:34 INFO  com.KLBproject.KLB_project.controller.ProductController - Task started.
+2024-08-19 16:29:34 INFO  com.KLBproject.KLB_project.controller.ProductController - Task finished.
+2024-08-19 16:29:34 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[GET] path=[/api/v1/products/all] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "message" : "obtenir tous les produits avec succès",
+  "data" : [ {
+    "id" : 1,
+    "name" : "Samsung TV2",
+    "brand" : "Samsung",
+    "price" : 520.00,
+    "inventory" : 50,
+    "description" : "Samsung smart TV2",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ {
+      "id" : 1,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/1"
+    }, {
+      "id" : 2,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/2"
+    }, {
+      "id" : 3,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/3"
+    }, {
+      "id" : 4,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/4"
+    } ]
+  }, {
+    "id" : 2,
+    "name" : "Samsung TV3",
+    "brand" : "Samsung",
+    "price" : 500.00,
+    "inventory" : 40,
+    "description" : "Samsung smart TV3",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 3,
+    "name" : "Apple TV 1",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 5,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 4,
+    "name" : "Apple TV 15",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 10,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  } ]
+}]
+2024-08-19 16:29:34 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/v1/products/all]
+2024-08-19 16:29:58 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 86306f09-a6b9-4111-9541-16e397f5eafc
+[PATH]: /api/v1/products/all
+[QUERIES]: null
+[HEADERS]: 
+---accept-language : vi
+---user-agent : PostmanRuntime/7.41.0
+---accept : */*
+---postman-token : 888dba51-722e-475b-baff-680613a351d2
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---cookie : JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 16:29:58 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /api/v1/products/all]
+2024-08-19 16:29:58 INFO  com.KLBproject.KLB_project.controller.ProductController - Task started.
+2024-08-19 16:29:58 INFO  com.KLBproject.KLB_project.controller.ProductController - Task finished.
+2024-08-19 16:29:58 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[GET] path=[/api/v1/products/all] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "message" : "Lấy thông tin tất cả sản phẩm thành công",
+  "data" : [ {
+    "id" : 1,
+    "name" : "Samsung TV2",
+    "brand" : "Samsung",
+    "price" : 520.00,
+    "inventory" : 50,
+    "description" : "Samsung smart TV2",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ {
+      "id" : 1,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/1"
+    }, {
+      "id" : 2,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/2"
+    }, {
+      "id" : 3,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/3"
+    }, {
+      "id" : 4,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/4"
+    } ]
+  }, {
+    "id" : 2,
+    "name" : "Samsung TV3",
+    "brand" : "Samsung",
+    "price" : 500.00,
+    "inventory" : 40,
+    "description" : "Samsung smart TV3",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 3,
+    "name" : "Apple TV 1",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 5,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 4,
+    "name" : "Apple TV 15",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 10,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  } ]
+}]
+2024-08-19 16:29:58 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/v1/products/all]
+2024-08-19 16:30:22 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 2ec12447-6a5d-4436-aa44-cb026cc5a0a5
+[PATH]: /api/v1/products/all
+[QUERIES]: null
+[HEADERS]: 
+---accept-language : en
+---user-agent : PostmanRuntime/7.41.0
+---accept : */*
+---postman-token : 01b6d270-d4ed-41fc-b84a-1c9561e227ce
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---cookie : JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 16:30:22 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /api/v1/products/all]
+2024-08-19 16:30:22 INFO  com.KLBproject.KLB_project.controller.ProductController - Task started.
+2024-08-19 16:30:22 INFO  com.KLBproject.KLB_project.controller.ProductController - Task finished.
+2024-08-19 16:30:22 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[GET] path=[/api/v1/products/all] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "message" : "get all product successfully!",
+  "data" : [ {
+    "id" : 1,
+    "name" : "Samsung TV2",
+    "brand" : "Samsung",
+    "price" : 520.00,
+    "inventory" : 50,
+    "description" : "Samsung smart TV2",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ {
+      "id" : 1,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/1"
+    }, {
+      "id" : 2,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/2"
+    }, {
+      "id" : 3,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/3"
+    }, {
+      "id" : 4,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/4"
+    } ]
+  }, {
+    "id" : 2,
+    "name" : "Samsung TV3",
+    "brand" : "Samsung",
+    "price" : 500.00,
+    "inventory" : 40,
+    "description" : "Samsung smart TV3",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 3,
+    "name" : "Apple TV 1",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 5,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 4,
+    "name" : "Apple TV 15",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 10,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  } ]
+}]
+2024-08-19 16:30:22 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/v1/products/all]
+2024-08-19 16:48:44 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-19 16:48:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-19 16:48:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-19 16:49:18 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-19 16:49:18 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Starting KlbProjectApplication using Java 17.0.12 with PID 24384 (C:\Users\ADMIN\IdeaProjects\KLB-project\KLB-project\target\classes started by ADMIN in C:\Users\ADMIN\IdeaProjects\KLB-project)
+2024-08-19 16:49:18 INFO  com.KLBproject.KLB_project.KlbProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-19 16:49:19 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-19 16:49:19 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 8 JPA repository interfaces.
+2024-08-19 16:49:20 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 9191 (http)
+2024-08-19 16:49:20 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9191"]
+2024-08-19 16:49:20 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-19 16:49:20 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-19 16:49:20 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-19 16:49:20 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1550 ms
+2024-08-19 16:49:20 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-19 16:49:20 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-19 16:49:20 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-19 16:49:21 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-19 16:49:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-19 16:49:21 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47d4e28a
+2024-08-19 16:49:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-19 16:49:21 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-19 16:49:22 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-19 16:49:22 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-19 16:49:23 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Filter 'logFilter' configured for use
+2024-08-19 16:49:23 INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-08-19 16:49:23 WARN  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-08-19 16:49:23 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-19 16:49:24 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9191"]
+2024-08-19 16:49:24 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 9191 (http) with context path '/'
+2024-08-19 16:49:24 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Started KlbProjectApplication in 5.966 seconds (process running for 7.053)
+2024-08-19 16:49:24 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-19 16:49:24 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-19 16:49:24 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-19 16:49:25 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 15ef727c-7a92-4c5d-867d-01e872fe6630
+[PATH]: /swagger-ui/index.html
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---cache-control : max-age=0
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---sec-ch-ua-mobile : ?0
+---sec-ch-ua-platform : "Windows"
+---upgrade-insecure-requests : 1
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---accept : text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+---sec-fetch-site : none
+---sec-fetch-mode : navigate
+---sec-fetch-user : ?1
+---sec-fetch-dest : document
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /swagger-ui/index.html]
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /swagger-ui/index.html]
+2024-08-19 16:49:25 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: b2f958d6-695f-407d-97e3-bae4d8ab661e
+[PATH]: /swagger-ui/swagger-ui.css
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---sec-ch-ua-mobile : ?0
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---sec-ch-ua-platform : "Windows"
+---accept : text/css,*/*;q=0.1
+---sec-fetch-site : same-origin
+---sec-fetch-mode : no-cors
+---sec-fetch-dest : style
+---referer : http://localhost:9191/swagger-ui/index.html
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /swagger-ui/swagger-ui.css]
+2024-08-19 16:49:25 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: cf67ce8c-501b-4bd5-b09c-20f3f8f864a9
+[PATH]: /swagger-ui/index.css
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---sec-ch-ua-mobile : ?0
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---sec-ch-ua-platform : "Windows"
+---accept : text/css,*/*;q=0.1
+---sec-fetch-site : same-origin
+---sec-fetch-mode : no-cors
+---sec-fetch-dest : style
+---referer : http://localhost:9191/swagger-ui/index.html
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /swagger-ui/index.css]
+2024-08-19 16:49:25 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 2906b10b-6781-4d76-adad-4a224f793d35
+[PATH]: /swagger-ui/swagger-ui-standalone-preset.js
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---sec-ch-ua-mobile : ?0
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---sec-ch-ua-platform : "Windows"
+---accept : */*
+---sec-fetch-site : same-origin
+---sec-fetch-mode : no-cors
+---sec-fetch-dest : script
+---referer : http://localhost:9191/swagger-ui/index.html
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /swagger-ui/swagger-ui-standalone-preset.js]
+2024-08-19 16:49:25 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 7aee0a56-a8d0-4b04-89d3-9868d80c988e
+[PATH]: /swagger-ui/swagger-initializer.js
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---sec-ch-ua-mobile : ?0
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---sec-ch-ua-platform : "Windows"
+---accept : */*
+---sec-fetch-site : same-origin
+---sec-fetch-mode : no-cors
+---sec-fetch-dest : script
+---referer : http://localhost:9191/swagger-ui/index.html
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /swagger-ui/swagger-initializer.js]
+2024-08-19 16:49:25 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 62bce2cd-992a-4657-bc98-8a2b4f1490a9
+[PATH]: /swagger-ui/swagger-ui-bundle.js
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---sec-ch-ua-mobile : ?0
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---sec-ch-ua-platform : "Windows"
+---accept : */*
+---sec-fetch-site : same-origin
+---sec-fetch-mode : no-cors
+---sec-fetch-dest : script
+---referer : http://localhost:9191/swagger-ui/index.html
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /swagger-ui/index.css]
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /swagger-ui/swagger-ui-bundle.js]
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /swagger-ui/swagger-ui.css]
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /swagger-ui/swagger-ui-standalone-preset.js]
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /swagger-ui/swagger-ui-bundle.js]
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /swagger-ui/swagger-initializer.js]
+2024-08-19 16:49:25 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 7091af15-7659-4bcf-a0d4-1bcf70d383c6
+[PATH]: /v3/api-docs/swagger-config
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---sec-ch-ua-mobile : ?0
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---sec-ch-ua-platform : "Windows"
+---accept : */*
+---sec-fetch-site : same-origin
+---sec-fetch-mode : cors
+---sec-fetch-dest : empty
+---referer : http://localhost:9191/swagger-ui/index.html
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /v3/api-docs/swagger-config]
+2024-08-19 16:49:25 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 6a95afa7-bc35-4c07-8ee0-a23b9f1a523e
+[PATH]: /swagger-ui/favicon-32x32.png
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---sec-ch-ua-mobile : ?0
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---sec-ch-ua-platform : "Windows"
+---accept : image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+---sec-fetch-site : same-origin
+---sec-fetch-mode : no-cors
+---sec-fetch-dest : image
+---referer : http://localhost:9191/swagger-ui/index.html
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /swagger-ui/favicon-32x32.png]
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /swagger-ui/favicon-32x32.png]
+2024-08-19 16:49:25 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[GET] path=[/v3/api-docs/swagger-config] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "configUrl" : "/v3/api-docs/swagger-config",
+  "oauth2RedirectUrl" : "http://localhost:9191/swagger-ui/oauth2-redirect.html",
+  "urls" : [ {
+    "url" : "/v3/api-docs/api-service-1",
+    "name" : "api-service-1"
+  } ],
+  "validatorUrl" : ""
+}]
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /v3/api-docs/swagger-config]
+2024-08-19 16:49:25 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 399d04b5-3840-4119-8e8c-183d7478e9d8
+[PATH]: /v3/api-docs/api-service-1
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---accept : application/json,*/*
+---sec-ch-ua-mobile : ?0
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---sec-ch-ua-platform : "Windows"
+---sec-fetch-site : same-origin
+---sec-fetch-mode : cors
+---sec-fetch-dest : empty
+---referer : http://localhost:9191/swagger-ui/index.html
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /v3/api-docs/api-service-1]
+2024-08-19 16:49:25 INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 408 ms
+2024-08-19 16:49:25 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[GET] path=[/v3/api-docs/api-service-1] responseHeaders=[{Vary=Origin}] responseBody=["eyJvcGVuYXBpIjoiMy4wLjEiLCJpbmZvIjp7InRpdGxlIjoiQVBJIEZPUiBNWSBQUk9KRUNUIiwiZGVzY3JpcHRpb24iOiJBUEkgZm9yIG15IHByb2plY3QgYXQgS2llbkxvbmdCYW5rIiwibGljZW5zZSI6eyJuYW1lIjoiQVBJIExpY2Vuc2UifSwidmVyc2lvbiI6IjEuMC4wIn0sInNlcnZlcnMiOlt7InVybCI6Imh0dHA6Ly9sb2NhbGhvc3Q6OTE5MSIsImRlc2NyaXB0aW9uIjoiU2VydmVyVGVzdCJ9XSwicGF0aHMiOnsiL2FwaS92MS91c2Vycy97dXNlcklkfS91cGRhdGUiOnsicHV0Ijp7InRhZ3MiOlsiVXNlciBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJVcGRhdGUgdXNlciAgYnkgSUQiLCJkZXNjcmlwdGlvbiI6IkFQSSB1cGRhdGUgdXNlciBieSBpZCIsIm9wZXJhdGlvbklkIjoidXBkYXRlVXNlciIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJ1c2VySWQiLCJpbiI6InBhdGgiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50NjQifX1dLCJyZXF1ZXN0Qm9keSI6eyJjb250ZW50Ijp7ImFwcGxpY2F0aW9uL2pzb24iOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9Vc2VyVXBkYXRlUmVxdWVzdCJ9fX0sInJlcXVpcmVkIjp0cnVlfSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL3Byb2R1Y3RzL3Byb2R1Y3Qve3Byb2R1Y3RJZH0vdXBkYXRlIjp7InB1dCI6eyJ0YWdzIjpbIlByb2R1Y3QgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiVXBkYXRlIHByb2R1Y3QgYnkgaWQiLCJkZXNjcmlwdGlvbiI6IkFQSSB1cGRhdGUgcHJvZHVjdCIsIm9wZXJhdGlvbklkIjoidXBkYXRlUHJvZHVjdCIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJwcm9kdWN0SWQiLCJpbiI6InBhdGgiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50NjQifX1dLCJyZXF1ZXN0Qm9keSI6eyJjb250ZW50Ijp7ImFwcGxpY2F0aW9uL2pzb24iOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9Qcm9kdWN0VXBkYXRlUmVxdWVzdCJ9fX0sInJlcXVpcmVkIjp0cnVlfSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL2ltYWdlcy9pbWFnZS97aW1hZ2VJZH0vdXBkYXRlIjp7InB1dCI6eyJ0YWdzIjpbIkltYWdlIENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IlVwZGF0ZSBJbWFnZSBCeSBJZCIsImRlc2NyaXB0aW9uIjoiQVBJIHVwZGF0ZSBpbWFnZSBieSBpZCIsIm9wZXJhdGlvbklkIjoidXBkYXRlSW1hZ2UiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiaW1hZ2VJZCIsImluIjoicGF0aCIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9fV0sInJlcXVlc3RCb2R5Ijp7ImNvbnRlbnQiOnsiYXBwbGljYXRpb24vanNvbiI6eyJzY2hlbWEiOnsidHlwZSI6Im9iamVjdCIsInByb3BlcnRpZXMiOnsiZmlsZSI6eyJ0eXBlIjoic3RyaW5nIiwiZm9ybWF0IjoiYmluYXJ5In19fX19LCJyZXF1aXJlZCI6dHJ1ZX0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9jYXRlZ29yaWVzL2NhdGVnb3J5L3tpZH0vdXBkYXRlIjp7InB1dCI6eyJ0YWdzIjpbIkNhdGVnb3J5IENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IlVwZGF0ZSBDYXRlZ29yeSIsImRlc2NyaXB0aW9uIjoiQVBJIHVwZGF0ZSBjYXRlZ29yeSIsIm9wZXJhdGlvbklkIjoidXBkYXRlQ2F0ZWdvcnkiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiaWQiLCJpbiI6InBhdGgiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50NjQifX1dLCJyZXF1ZXN0Qm9keSI6eyJjb250ZW50Ijp7ImFwcGxpY2F0aW9uL2pzb24iOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9DYXRlZ29yeSJ9fX0sInJlcXVpcmVkIjp0cnVlfSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL2NhcnRJdGVtcy9jYXJ0L3tjYXJ0SWR9L2l0ZW0ve2l0ZW1JZH0vdXBkYXRlIjp7InB1dCI6eyJ0YWdzIjpbIkNhcnQgSXRlbSBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJVcGRhdGUgSXRlbSBRdWFudGl0eSIsImRlc2NyaXB0aW9uIjoiQVBJIHVwZGF0ZSBpdGVtIHF1YW50aXR5Iiwib3BlcmF0aW9uSWQiOiJ1cGRhdGVJdGVtUXVhbnRpdHkiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiY2FydElkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19LHsibmFtZSI6Iml0ZW1JZCIsImluIjoicGF0aCIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9fSx7Im5hbWUiOiJxdWFudGl0eSIsImluIjoicXVlcnkiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50MzIifX1dLCJyZXNwb25zZXMiOnsiMjAwIjp7ImRlc2NyaXB0aW9uIjoiT0siLCJjb250ZW50Ijp7IiovKiI6eyJzY2hlbWEiOnsiJHJlZiI6IiMvY29tcG9uZW50cy9zY2hlbWFzL0FwaVJlc3BvbnNlIn19fX19fX0sIi9hcGkvdjEvdXNlcnMvYWRkIjp7InBvc3QiOnsidGFncyI6WyJVc2VyIENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IkFkZCB1c2VyIiwiZGVzY3JpcHRpb24iOiJBUEkgY3JlYXRlIG5ldyB1c2VyIiwib3BlcmF0aW9uSWQiOiJjcmVhdGVVc2VyIiwicmVxdWVzdEJvZHkiOnsiY29udGVudCI6eyJhcHBsaWNhdGlvbi9qc29uIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQ3JlYXRlVXNlclJlcXVlc3QifX19LCJyZXF1aXJlZCI6dHJ1ZX0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9wcm9kdWN0cy9hZGQiOnsicG9zdCI6eyJ0YWdzIjpbIlByb2R1Y3QgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiQWRkIHByb2R1Y3QiLCJkZXNjcmlwdGlvbiI6IkFQSSBhZGQgbmV3IHByb2R1Y3QiLCJvcGVyYXRpb25JZCI6ImFkZFByb2R1Y3QiLCJyZXF1ZXN0Qm9keSI6eyJjb250ZW50Ijp7ImFwcGxpY2F0aW9uL2pzb24iOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BZGRQcm9kdWN0UmVxdWVzdCJ9fX0sInJlcXVpcmVkIjp0cnVlfSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL29yZGVycy9vcmRlciI6eyJwb3N0Ijp7InRhZ3MiOlsiT3JkZXIgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiQWRkIE9yZGVyIiwiZGVzY3JpcHRpb24iOiJBUEkgY3JlYXRlIG5ldyBvcmRlciIsIm9wZXJhdGlvbklkIjoiY3JlYXRlT3JkZXIiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoidXNlcklkIiwiaW4iOiJxdWVyeSIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9fV0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9pbWFnZXMvdXBsb2FkIjp7InBvc3QiOnsidGFncyI6WyJJbWFnZSBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJVcGxvYWQgSW1hZ2UgRm9yIFByb2R1Y3QiLCJkZXNjcmlwdGlvbiI6IkFQSSB1cGxvYWQgaW1hZ2UgZm9yIHByb2R1Y3QiLCJvcGVyYXRpb25JZCI6InNhdmVJbWFnZXMiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiZmlsZXMiLCJpbiI6InF1ZXJ5IiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiYXJyYXkiLCJpdGVtcyI6eyJ0eXBlIjoic3RyaW5nIiwiZm9ybWF0IjoiYmluYXJ5In19fSx7Im5hbWUiOiJwcm9kdWN0SWQiLCJpbiI6InF1ZXJ5IiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL2NhdGVnb3JpZXMvYWRkIjp7InBvc3QiOnsidGFncyI6WyJDYXRlZ29yeSBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJBZGQgQ2F0ZWdvcnkiLCJkZXNjcmlwdGlvbiI6IkFQSSBhZGQgbmV3IGNhdGVnb3J5Iiwib3BlcmF0aW9uSWQiOiJhZGRDYXRlZ29yeSIsInJlcXVlc3RCb2R5Ijp7ImNvbnRlbnQiOnsiYXBwbGljYXRpb24vanNvbiI6eyJzY2hlbWEiOnsiJHJlZiI6IiMvY29tcG9uZW50cy9zY2hlbWFzL0NhdGVnb3J5In19fSwicmVxdWlyZWQiOnRydWV9LCJyZXNwb25zZXMiOnsiMjAwIjp7ImRlc2NyaXB0aW9uIjoiT0siLCJjb250ZW50Ijp7IiovKiI6eyJzY2hlbWEiOnsiJHJlZiI6IiMvY29tcG9uZW50cy9zY2hlbWFzL0FwaVJlc3BvbnNlIn19fX19fX0sIi9hcGkvdjEvY2FydEl0ZW1zL2l0ZW0vYWRkIjp7InBvc3QiOnsidGFncyI6WyJDYXJ0IEl0ZW0gQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiQWRkIEl0ZW0gVG8gQ2FydCIsImRlc2NyaXB0aW9uIjoiQVBJIGFkZCBpdGVtIHRvIGNhcnQiLCJvcGVyYXRpb25JZCI6ImFkZEl0ZW1Ub0NhcnQiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoicHJvZHVjdElkIiwiaW4iOiJxdWVyeSIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9fSx7Im5hbWUiOiJxdWFudGl0eSIsImluIjoicXVlcnkiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50MzIifX1dLCJyZXNwb25zZXMiOnsiMjAwIjp7ImRlc2NyaXB0aW9uIjoiT0siLCJjb250ZW50Ijp7IiovKiI6eyJzY2hlbWEiOnsiJHJlZiI6IiMvY29tcG9uZW50cy9zY2hlbWFzL0FwaVJlc3BvbnNlIn19fX19fX0sIi9hcGkvdjEvYXV0aC9sb2dpbiI6eyJwb3N0Ijp7InRhZ3MiOlsiQXV0aCBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJVc2VyIExvZ2luIiwiZGVzY3JpcHRpb24iOiJBUEkgbG9naW4iLCJvcGVyYXRpb25JZCI6ImxvZ2luIiwicmVxdWVzdEJvZHkiOnsiY29udGVudCI6eyJhcHBsaWNhdGlvbi9qc29uIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvTG9naW5SZXF1ZXN0In19fSwicmVxdWlyZWQiOnRydWV9LCJyZXNwb25zZXMiOnsiMjAwIjp7ImRlc2NyaXB0aW9uIjoiT0siLCJjb250ZW50Ijp7IiovKiI6eyJzY2hlbWEiOnsiJHJlZiI6IiMvY29tcG9uZW50cy9zY2hlbWFzL0FwaVJlc3BvbnNlIn19fX19fX0sIi9hcGkvdjEvdXNlcnMve3VzZXJJZH0vdXNlciI6eyJnZXQiOnsidGFncyI6WyJVc2VyIENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IkdldCB1c2VyIGJ5IGlkIiwiZGVzY3JpcHRpb24iOiJBUEkgZ2V0IHVzZXIgYnkgaWQiLCJvcGVyYXRpb25JZCI6ImdldFVzZXJCeUlkIiwicGFyYW1ldGVycyI6W3sibmFtZSI6InVzZXJJZCIsImluIjoicGF0aCIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9fV0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9wcm9kdWN0cy9wcm9kdWN0cy97bmFtZX0vcHJvZHVjdHMiOnsiZ2V0Ijp7InRhZ3MiOlsiUHJvZHVjdCBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJHZXQgcHJvZHVjdCBieSBuYW1lIiwiZGVzY3JpcHRpb24iOiJBUEkgZ2V0IHByb2R1Y3QgYnkgbmFtZSIsIm9wZXJhdGlvbklkIjoiZ2V0UHJvZHVjdEJ5TmFtZSIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJuYW1lIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoic3RyaW5nIn19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL3Byb2R1Y3RzL3Byb2R1Y3RzL2J5L2NhdGVnb3J5LWFuZC1icmFuZCI6eyJnZXQiOnsidGFncyI6WyJQcm9kdWN0IENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IkdldCBwcm9kdWN0IGJ5IGNhdGVnb3J5IGFuZCBicmFuZCIsImRlc2NyaXB0aW9uIjoiQVBJIGdldCBwcm9kdWN0IGJ5IGNhdGVnb3J5IGFuZCBicmFuZCIsIm9wZXJhdGlvbklkIjoiZ2V0UHJvZHVjdEJ5Q2F0ZWdvcnlBbmRCcmFuZCIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJjYXRlZ29yeSIsImluIjoicXVlcnkiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJzdHJpbmcifX0seyJuYW1lIjoiYnJhbmQiLCJpbiI6InF1ZXJ5IiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoic3RyaW5nIn19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL3Byb2R1Y3RzL3Byb2R1Y3RzL2J5L2JyYW5kLWFuZC1uYW1lIjp7ImdldCI6eyJ0YWdzIjpbIlByb2R1Y3QgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiR2V0IHByb2R1Y3QgYnkgYnJhbmQgYW5kIG5hbWUiLCJkZXNjcmlwdGlvbiI6IkFQSSBnZXQgcHJvZHVjdCBieSBicmFuZCBhbmQgbmFtZSIsIm9wZXJhdGlvbklkIjoiZ2V0UHJvZHVjdEJ5QnJhbmRBbmROYW1lIiwicGFyYW1ldGVycyI6W3sibmFtZSI6ImJyYW5kTmFtZSIsImluIjoicXVlcnkiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJzdHJpbmcifX0seyJuYW1lIjoicHJvZHVjdE5hbWUiLCJpbiI6InF1ZXJ5IiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoic3RyaW5nIn19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL3Byb2R1Y3RzL3Byb2R1Y3Qve3Byb2R1Y3RJZH0vcHJvZHVjdCI6eyJnZXQiOnsidGFncyI6WyJQcm9kdWN0IENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IkdldCBwcm9kdWN0IGJ5IGlkIiwiZGVzY3JpcHRpb24iOiJBUEkgZ2V0IHByb2R1Y3QgYnkgaWQiLCJvcGVyYXRpb25JZCI6ImdldFByb2R1Y3RCeUlkIiwicGFyYW1ldGVycyI6W3sibmFtZSI6InByb2R1Y3RJZCIsImluIjoicGF0aCIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9fV0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9wcm9kdWN0cy9wcm9kdWN0L3tjYXRlZ29yeX0vYWxsL3Byb2R1Y3RzIjp7ImdldCI6eyJ0YWdzIjpbIlByb2R1Y3QgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiR2V0IHByb2R1Y3QgYnkgY2F0ZWdvcnkiLCJkZXNjcmlwdGlvbiI6IkFQSSBnZXQgcHJvZHVjdCBieSBjYXRlZ29yeSIsIm9wZXJhdGlvbklkIjoiZmluZFByb2R1Y3RCeUNhdGVnb3J5IiwicGFyYW1ldGVycyI6W3sibmFtZSI6ImNhdGVnb3J5IiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoic3RyaW5nIn19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL3Byb2R1Y3RzL3Byb2R1Y3QvY291bnQvYnktYnJhbmQvYW5kLW5hbWUiOnsiZ2V0Ijp7InRhZ3MiOlsiUHJvZHVjdCBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJDb3VudCBwcm9kdWN0IGJ5IGJyYW5kIGFuZCBuYW1lIiwiZGVzY3JpcHRpb24iOiJBUEkgY291bnQgcHJvZHVjdCBieSBicmFuZCBhbmQgbmFtZSIsIm9wZXJhdGlvbklkIjoiY291bnRQcm9kdWN0c0J5QnJhbmRBbmROYW1lIiwicGFyYW1ldGVycyI6W3sibmFtZSI6ImJyYW5kIiwiaW4iOiJxdWVyeSIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6InN0cmluZyJ9fSx7Im5hbWUiOiJuYW1lIiwiaW4iOiJxdWVyeSIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6InN0cmluZyJ9fV0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9wcm9kdWN0cy9wcm9kdWN0L2J5LWJyYW5kIjp7ImdldCI6eyJ0YWdzIjpbIlByb2R1Y3QgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiR2V0IHByb2R1Y3QgYnkgYnJhbmQiLCJkZXNjcmlwdGlvbiI6IkFQSSBnZXQgcHJvZHVjdCBieSBicmFuZCIsIm9wZXJhdGlvbklkIjoiZmluZFByb2R1Y3RCeUJyYW5kIiwicGFyYW1ldGVycyI6W3sibmFtZSI6ImJyYW5kIiwiaW4iOiJxdWVyeSIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6InN0cmluZyJ9fV0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9wcm9kdWN0cy9hbGwiOnsiZ2V0Ijp7InRhZ3MiOlsiUHJvZHVjdCBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJHZXQgYWxsIHByb2R1Y3QiLCJkZXNjcmlwdGlvbiI6IkFQSSBnZXQgYWxsIHByb2R1Y3QiLCJvcGVyYXRpb25JZCI6ImdldEFsbFByb2R1Y3RzIiwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL29yZGVycy97dXNlcklkfS9vcmRlciI6eyJnZXQiOnsidGFncyI6WyJPcmRlciBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJHZXQgT3JkZXIgQnkgVXNlcklkIiwiZGVzY3JpcHRpb24iOiJBUEkgZ2V0IG9yZGVyIGJ5IHVzZXJJZCIsIm9wZXJhdGlvbklkIjoiZ2V0VXNlck9yZGVycyIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJ1c2VySWQiLCJpbiI6InBhdGgiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50NjQifX1dLCJyZXNwb25zZXMiOnsiMjAwIjp7ImRlc2NyaXB0aW9uIjoiT0siLCJjb250ZW50Ijp7IiovKiI6eyJzY2hlbWEiOnsiJHJlZiI6IiMvY29tcG9uZW50cy9zY2hlbWFzL0FwaVJlc3BvbnNlIn19fX19fX0sIi9hcGkvdjEvb3JkZXJzL3tvcmRlcklkfS9vcmRlciI6eyJnZXQiOnsidGFncyI6WyJPcmRlciBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJHZXQgT3JkZXIgQnkgSWQiLCJkZXNjcmlwdGlvbiI6IkFQSSBnZXQgb3JkZXIgYnkgaWQiLCJvcGVyYXRpb25JZCI6ImdldE9yZGVyQnlJZCIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJvcmRlcklkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL2ltYWdlcy9pbWFnZS9kb3dubG9hZC97aW1hZ2VJZH0iOnsiZ2V0Ijp7InRhZ3MiOlsiSW1hZ2UgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiRG93bmxvYWQgSW1hZ2UgQnkgSWQiLCJkZXNjcmlwdGlvbiI6IkFQSSBkb3dubG9hZCBpbWFnZSBieSBpZCIsIm9wZXJhdGlvbklkIjoiZG93bmxvYWRJbWFnZSIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJpbWFnZUlkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7InR5cGUiOiJzdHJpbmciLCJmb3JtYXQiOiJiaW5hcnkifX19fX19fSwiL2FwaS92MS9jYXRlZ29yaWVzL2NhdGVnb3J5L3tuYW1lfS9jYXRlZ29yeSI6eyJnZXQiOnsidGFncyI6WyJDYXRlZ29yeSBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJHZXQgQ2F0ZWdvcnkgQnkgTmFtZSIsImRlc2NyaXB0aW9uIjoiQVBJIGdldCBjYXRlZ29yeSBieSBuYW1lIiwib3BlcmF0aW9uSWQiOiJnZXRDYXRlZ29yeUJ5TmFtZSIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJuYW1lIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoic3RyaW5nIn19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL2NhdGVnb3JpZXMvY2F0ZWdvcnkve2lkfS9jYXRlZ29yeSI6eyJnZXQiOnsidGFncyI6WyJDYXRlZ29yeSBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJHZXQgQ2F0ZWdvcnkgQnkgSWQiLCJkZXNjcmlwdGlvbiI6IkFQSSBnZXQgY2F0ZWdvcnkgYnkgaWQiLCJvcGVyYXRpb25JZCI6ImdldENhdGVnb3J5QnlJZCIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJpZCIsImluIjoicGF0aCIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9fV0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9jYXRlZ29yaWVzL2FsbCI6eyJnZXQiOnsidGFncyI6WyJDYXRlZ29yeSBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJHZXQgQWxsIENhdGVnb3JpZXMiLCJkZXNjcmlwdGlvbiI6IkFQSSBnZXQgYWxsIGNhdGVnb3JpZXMiLCJvcGVyYXRpb25JZCI6ImdldEFsbENhdGVnb3JpZXMiLCJyZXNwb25zZXMiOnsiMjAwIjp7ImRlc2NyaXB0aW9uIjoiT0siLCJjb250ZW50Ijp7IiovKiI6eyJzY2hlbWEiOnsiJHJlZiI6IiMvY29tcG9uZW50cy9zY2hlbWFzL0FwaVJlc3BvbnNlIn19fX19fX0sIi9hcGkvdjEvY2FydHMve2NhcnRJZH0vbXktY2FydCI6eyJnZXQiOnsidGFncyI6WyJDYXJ0IENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IkdldCBDYXJ0IEJ5IElkIiwiZGVzY3JpcHRpb24iOiJBUEkgZ2V0IGNhcmQgYnkgaWQiLCJvcGVyYXRpb25JZCI6ImdldENhcnQiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiY2FydElkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL2NhcnRzL3tjYXJ0SWR9L2NhcnQvdG90YWwtcHJpY2UiOnsiZ2V0Ijp7InRhZ3MiOlsiQ2FydCBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJHZXQgVG90YWwgQW1vdW50IiwiZGVzY3JpcHRpb24iOiJBUEkgZ2V0IHRvdGFsIGFtb3VudCIsIm9wZXJhdGlvbklkIjoiZ2V0VG90YWxBbW91bnQiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiY2FydElkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL3VzZXJzL3t1c2VySWR9L2RlbGV0ZSI6eyJkZWxldGUiOnsidGFncyI6WyJVc2VyIENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IkRlbGV0ZSB1c2VyIGJ5IGlkIiwiZGVzY3JpcHRpb24iOiJBUEkgZGVsZXRlIHVzZXIgYnkgaWQiLCJvcGVyYXRpb25JZCI6ImRlbGV0ZVVzZXIiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoidXNlcklkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL3Byb2R1Y3RzL3Byb2R1Y3Qve3Byb2R1Y3RJZH0vZGVsZXRlIjp7ImRlbGV0ZSI6eyJ0YWdzIjpbIlByb2R1Y3QgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiRGVsZXRlIHByb2R1Y3QiLCJkZXNjcmlwdGlvbiI6IkFQSSBkZWxldGUgcHJvZHVjdCIsIm9wZXJhdGlvbklkIjoiZGVsZXRlUHJvZHVjdCIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJwcm9kdWN0SWQiLCJpbiI6InBhdGgiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50NjQifX1dLCJyZXNwb25zZXMiOnsiMjAwIjp7ImRlc2NyaXB0aW9uIjoiT0siLCJjb250ZW50Ijp7IiovKiI6eyJzY2hlbWEiOnsiJHJlZiI6IiMvY29tcG9uZW50cy9zY2hlbWFzL0FwaVJlc3BvbnNlIn19fX19fX0sIi9hcGkvdjEvaW1hZ2VzL2ltYWdlL3tpbWFnZUlkfS9kZWxldGUiOnsiZGVsZXRlIjp7InRhZ3MiOlsiSW1hZ2UgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiRGVsZXRlIEltYWdlIEJ5IElkIiwiZGVzY3JpcHRpb24iOiJBUEkgZGVsZXRlIGltYWdlIGJ5IGlkIiwib3BlcmF0aW9uSWQiOiJkZWxldGVJbWFnZSIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJpbWFnZUlkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL2NhdGVnb3JpZXMvY2F0ZWdvcnkve2lkfS9kZWxldGUiOnsiZGVsZXRlIjp7InRhZ3MiOlsiQ2F0ZWdvcnkgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiRGVsZXRlIENhdGVnb3J5IiwiZGVzY3JpcHRpb24iOiJBUEkgZGVsZXRlIGNhdGVnb3J5Iiwib3BlcmF0aW9uSWQiOiJkZWxldGVDYXRlZ29yeSIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJpZCIsImluIjoicGF0aCIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9fV0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9jYXJ0cy97Y2FydElkfS9jbGVhciI6eyJkZWxldGUiOnsidGFncyI6WyJDYXJ0IENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IkNsZWFyIENhcnQgQnkgSWQiLCJkZXNjcmlwdGlvbiI6IkFQSSBjbGVhciBjYXJ0IGJ5IGlkIiwib3BlcmF0aW9uSWQiOiJjbGVhckNhcnQiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiY2FydElkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL2NhcnRJdGVtcy9jYXJ0L3tjYXJ0SWR9L2l0ZW0ve2l0ZW1JZH0vcmVtb3ZlIjp7ImRlbGV0ZSI6eyJ0YWdzIjpbIkNhcnQgSXRlbSBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJEZWxldGUgSXRlbSBGcm9tIENhcnQiLCJkZXNjcmlwdGlvbiI6IkFQSSBkZWxldGUgaXRlbSBmcm9tIGNhcnQiLCJvcGVyYXRpb25JZCI6InJlbW92ZUl0ZW1Gcm9tQ2FydCIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJjYXJ0SWQiLCJpbiI6InBhdGgiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50NjQifX0seyJuYW1lIjoiaXRlbUlkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19fSwiY29tcG9uZW50cyI6eyJzY2hlbWFzIjp7IlVzZXJVcGRhdGVSZXF1ZXN0Ijp7InR5cGUiOiJvYmplY3QiLCJwcm9wZXJ0aWVzIjp7ImZpcnN0TmFtZSI6eyJ0eXBlIjoic3RyaW5nIn0sImxhc3ROYW1lIjp7InR5cGUiOiJzdHJpbmcifX19LCJBcGlSZXNwb25zZSI6eyJ0eXBlIjoib2JqZWN0IiwicHJvcGVydGllcyI6eyJtZXNzYWdlIjp7InR5cGUiOiJzdHJpbmcifSwiZGF0YSI6eyJ0eXBlIjoib2JqZWN0In19fSwiQ2F0ZWdvcnkiOnsidHlwZSI6Im9iamVjdCIsInByb3BlcnRpZXMiOnsiaWQiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9LCJuYW1lIjp7InR5cGUiOiJzdHJpbmcifX19LCJQcm9kdWN0VXBkYXRlUmVxdWVzdCI6eyJ0eXBlIjoib2JqZWN0IiwicHJvcGVydGllcyI6eyJpZCI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In0sIm5hbWUiOnsidHlwZSI6InN0cmluZyJ9LCJicmFuZCI6eyJ0eXBlIjoic3RyaW5nIn0sInByaWNlIjp7InR5cGUiOiJudW1iZXIifSwiaW52ZW50b3J5Ijp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50MzIifSwiZGVzY3JpcHRpb24iOnsidHlwZSI6InN0cmluZyJ9LCJjYXRlZ29yeSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQ2F0ZWdvcnkifX19LCJDcmVhdGVVc2VyUmVxdWVzdCI6eyJ0eXBlIjoib2JqZWN0IiwicHJvcGVydGllcyI6eyJmaXJzdE5hbWUiOnsidHlwZSI6InN0cmluZyJ9LCJsYXN0TmFtZSI6eyJ0eXBlIjoic3RyaW5nIn0sImVtYWlsIjp7InR5cGUiOiJzdHJpbmcifSwicGFzc3dvcmQiOnsidHlwZSI6InN0cmluZyJ9fX0sIkFkZFByb2R1Y3RSZXF1ZXN0Ijp7InR5cGUiOiJvYmplY3QiLCJwcm9wZXJ0aWVzIjp7ImlkIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50NjQifSwibmFtZSI6eyJ0eXBlIjoic3RyaW5nIn0sImJyYW5kIjp7InR5cGUiOiJzdHJpbmcifSwicHJpY2UiOnsidHlwZSI6Im51bWJlciJ9LCJpbnZlbnRvcnkiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQzMiJ9LCJkZXNjcmlwdGlvbiI6eyJ0eXBlIjoic3RyaW5nIn0sImNhdGVnb3J5Ijp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9DYXRlZ29yeSJ9fX0sIkxvZ2luUmVxdWVzdCI6eyJyZXF1aXJlZCI6WyJlbWFpbCIsInBhc3N3b3JkIl0sInR5cGUiOiJvYmplY3QiLCJwcm9wZXJ0aWVzIjp7ImVtYWlsIjp7InR5cGUiOiJzdHJpbmcifSwicGFzc3dvcmQiOnsidHlwZSI6InN0cmluZyJ9fX19fX0="]
+2024-08-19 16:49:25 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /v3/api-docs/api-service-1]
+2024-08-19 16:49:41 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: cb852d7a-02e1-41e3-8e36-aec1231d2b3f
+[PATH]: /api/v1/products/all
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---accept : */*
+---sec-ch-ua-mobile : ?0
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---sec-ch-ua-platform : "Windows"
+---sec-fetch-site : same-origin
+---sec-fetch-mode : cors
+---sec-fetch-dest : empty
+---referer : http://localhost:9191/swagger-ui/index.html
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 16:49:41 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /api/v1/products/all]
+2024-08-19 16:49:41 INFO  com.KLBproject.KLB_project.controller.ProductController - Task started.
+2024-08-19 16:49:42 INFO  com.KLBproject.KLB_project.controller.ProductController - Task finished.
+2024-08-19 16:49:42 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[GET] path=[/api/v1/products/all] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "message" : "get all product successfully!",
+  "data" : [ {
+    "id" : 1,
+    "name" : "Samsung TV2",
+    "brand" : "Samsung",
+    "price" : 520.00,
+    "inventory" : 50,
+    "description" : "Samsung smart TV2",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ {
+      "id" : 1,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/1"
+    }, {
+      "id" : 2,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/2"
+    }, {
+      "id" : 3,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/3"
+    }, {
+      "id" : 4,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/4"
+    } ]
+  }, {
+    "id" : 2,
+    "name" : "Samsung TV3",
+    "brand" : "Samsung",
+    "price" : 500.00,
+    "inventory" : 40,
+    "description" : "Samsung smart TV3",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 3,
+    "name" : "Apple TV 1",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 5,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 4,
+    "name" : "Apple TV 15",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 10,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  } ]
+}]
+2024-08-19 16:49:42 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/v1/products/all]
+2024-08-19 17:05:08 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-19 17:05:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-19 17:05:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-19 17:26:09 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-19 17:26:09 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Starting KlbProjectApplication using Java 17.0.12 with PID 25664 (C:\Users\ADMIN\IdeaProjects\KLB-project\KLB-project\target\classes started by ADMIN in C:\Users\ADMIN\IdeaProjects\KLB-project)
+2024-08-19 17:26:09 INFO  com.KLBproject.KLB_project.KlbProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-19 17:26:10 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-19 17:26:10 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 8 JPA repository interfaces.
+2024-08-19 17:26:11 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 9191 (http)
+2024-08-19 17:26:11 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9191"]
+2024-08-19 17:26:11 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-19 17:26:11 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-19 17:26:11 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-19 17:26:11 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1525 ms
+2024-08-19 17:26:11 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-19 17:26:11 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-19 17:26:11 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-19 17:26:11 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-19 17:26:11 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-19 17:26:12 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10d49900
+2024-08-19 17:26:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-19 17:26:12 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-19 17:26:13 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-19 17:26:13 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-19 17:26:13 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Filter 'logFilter' configured for use
+2024-08-19 17:26:13 INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-08-19 17:26:13 WARN  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-08-19 17:26:13 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-19 17:26:14 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9191"]
+2024-08-19 17:26:14 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 9191 (http) with context path '/'
+2024-08-19 17:26:14 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Started KlbProjectApplication in 5.41 seconds (process running for 6.403)
+2024-08-19 17:31:15 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m31s388ms702µs).
+2024-08-19 20:45:56 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h14m40s745ms554µs200ns).
+2024-08-19 21:08:36 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-19 21:08:36 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-19 21:08:36 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 50 ms
+2024-08-19 21:08:37 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 085d3a8e-a5d3-46de-bbbf-d0f0e8d3ed3f
+[PATH]: /api/v1/products/all
+[QUERIES]: null
+[HEADERS]: 
+---accept-language : en
+---user-agent : PostmanRuntime/7.41.0
+---accept : */*
+---postman-token : cd1c2b90-02dd-4d96-a8c8-26dcf445fc3f
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---cookie : JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 21:08:37 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /api/v1/products/all]
+2024-08-19 21:08:37 INFO  com.KLBproject.KLB_project.controller.ProductController - Task started.
+2024-08-19 21:08:37 INFO  com.KLBproject.KLB_project.controller.ProductController - Task finished.
+2024-08-19 21:08:37 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[GET] path=[/api/v1/products/all] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "message" : "get all product successfully!",
+  "data" : [ {
+    "id" : 1,
+    "name" : "Samsung TV2",
+    "brand" : "Samsung",
+    "price" : 520.00,
+    "inventory" : 50,
+    "description" : "Samsung smart TV2",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ {
+      "id" : 1,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/1"
+    }, {
+      "id" : 2,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/2"
+    }, {
+      "id" : 3,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/3"
+    }, {
+      "id" : 4,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/4"
+    } ]
+  }, {
+    "id" : 2,
+    "name" : "Samsung TV3",
+    "brand" : "Samsung",
+    "price" : 500.00,
+    "inventory" : 40,
+    "description" : "Samsung smart TV3",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 3,
+    "name" : "Apple TV 1",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 5,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 4,
+    "name" : "Apple TV 15",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 10,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  } ]
+}]
+2024-08-19 21:08:37 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/v1/products/all]
+2024-08-19 21:15:15 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-19 21:15:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-19 21:15:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-19 21:23:18 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-19 21:23:18 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Starting KlbProjectApplication using Java 17.0.12 with PID 25224 (C:\Users\ADMIN\IdeaProjects\KLB-project\KLB-project\target\classes started by ADMIN in C:\Users\ADMIN\IdeaProjects\KLB-project)
+2024-08-19 21:23:18 INFO  com.KLBproject.KLB_project.KlbProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-19 21:23:19 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-19 21:23:20 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 124 ms. Found 8 JPA repository interfaces.
+2024-08-19 21:23:20 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 9191 (http)
+2024-08-19 21:23:20 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9191"]
+2024-08-19 21:23:20 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-19 21:23:20 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-19 21:23:21 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-19 21:23:21 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2799 ms
+2024-08-19 21:23:21 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-19 21:23:21 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-19 21:23:21 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-19 21:23:21 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-19 21:23:21 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-19 21:23:22 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6604f246
+2024-08-19 21:23:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-19 21:23:22 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-19 21:23:23 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-19 21:23:23 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-19 21:23:24 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Filter 'logFilter' configured for use
+2024-08-19 21:23:24 INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-08-19 21:23:24 WARN  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-08-19 21:23:25 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-19 21:23:26 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9191"]
+2024-08-19 21:23:26 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 9191 (http) with context path '/'
+2024-08-19 21:23:26 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Started KlbProjectApplication in 9.02 seconds (process running for 10.613)
+2024-08-19 21:23:26 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-19 21:23:26 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-19 21:23:26 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-08-19 21:23:26 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 2ca478a0-3479-4bd2-b16e-4d97760bb470
+[PATH]: /swagger-ui/index.html
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---cache-control : max-age=0
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---sec-ch-ua-mobile : ?0
+---sec-ch-ua-platform : "Windows"
+---upgrade-insecure-requests : 1
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---accept : text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+---sec-fetch-site : same-origin
+---sec-fetch-mode : navigate
+---sec-fetch-user : ?1
+---sec-fetch-dest : document
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 21:23:26 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /swagger-ui/index.html]
+2024-08-19 21:23:26 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /swagger-ui/index.html]
+2024-08-19 21:23:27 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 521dfab4-d88f-4c07-99b6-1acf2fe401b2
+[PATH]: /swagger-ui/swagger-ui.css
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---sec-ch-ua-mobile : ?0
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---sec-ch-ua-platform : "Windows"
+---accept : text/css,*/*;q=0.1
+---sec-fetch-site : same-origin
+---sec-fetch-mode : no-cors
+---sec-fetch-dest : style
+---referer : http://localhost:9191/swagger-ui/index.html
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 21:23:27 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /swagger-ui/swagger-ui.css]
+2024-08-19 21:23:27 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 422e4912-1905-4a9c-be88-fd591d437b2e
+[PATH]: /swagger-ui/index.css
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---sec-ch-ua-mobile : ?0
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---sec-ch-ua-platform : "Windows"
+---accept : text/css,*/*;q=0.1
+---sec-fetch-site : same-origin
+---sec-fetch-mode : no-cors
+---sec-fetch-dest : style
+---referer : http://localhost:9191/swagger-ui/index.html
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 21:23:27 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /swagger-ui/index.css]
+2024-08-19 21:23:27 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /swagger-ui/index.css]
+2024-08-19 21:23:27 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /swagger-ui/swagger-ui.css]
+2024-08-19 21:23:27 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: ab32729d-3a25-4f3c-98fe-350f04ece130
+[PATH]: /swagger-ui/swagger-ui-bundle.js
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---sec-ch-ua-mobile : ?0
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---sec-ch-ua-platform : "Windows"
+---accept : */*
+---sec-fetch-site : same-origin
+---sec-fetch-mode : no-cors
+---sec-fetch-dest : script
+---referer : http://localhost:9191/swagger-ui/index.html
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 21:23:27 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 9b2d3b18-13e3-4ff1-a81e-ae07cc8f1323
+[PATH]: /swagger-ui/swagger-initializer.js
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---sec-ch-ua-mobile : ?0
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---sec-ch-ua-platform : "Windows"
+---accept : */*
+---sec-fetch-site : same-origin
+---sec-fetch-mode : no-cors
+---sec-fetch-dest : script
+---referer : http://localhost:9191/swagger-ui/index.html
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 21:23:27 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /swagger-ui/swagger-initializer.js]
+2024-08-19 21:23:27 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: e79a0f4c-dc6b-4463-9d0c-67060d2c6fba
+[PATH]: /swagger-ui/swagger-ui-standalone-preset.js
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---sec-ch-ua-mobile : ?0
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---sec-ch-ua-platform : "Windows"
+---accept : */*
+---sec-fetch-site : same-origin
+---sec-fetch-mode : no-cors
+---sec-fetch-dest : script
+---referer : http://localhost:9191/swagger-ui/index.html
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 21:23:27 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /swagger-ui/swagger-ui-bundle.js]
+2024-08-19 21:23:27 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /swagger-ui/swagger-ui-standalone-preset.js]
+2024-08-19 21:23:27 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /swagger-ui/swagger-ui-standalone-preset.js]
+2024-08-19 21:23:27 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /swagger-ui/swagger-ui-bundle.js]
+2024-08-19 21:23:27 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /swagger-ui/swagger-initializer.js]
+2024-08-19 21:23:27 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 46a90749-7565-4627-bade-867419b9632d
+[PATH]: /v3/api-docs/swagger-config
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---sec-ch-ua-mobile : ?0
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---sec-ch-ua-platform : "Windows"
+---accept : */*
+---sec-fetch-site : same-origin
+---sec-fetch-mode : cors
+---sec-fetch-dest : empty
+---referer : http://localhost:9191/swagger-ui/index.html
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 21:23:27 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /v3/api-docs/swagger-config]
+2024-08-19 21:23:27 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: e8809ad5-5ac5-414d-b1b0-47d150864c46
+[PATH]: /swagger-ui/favicon-32x32.png
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---sec-ch-ua-mobile : ?0
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---sec-ch-ua-platform : "Windows"
+---accept : image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+---sec-fetch-site : same-origin
+---sec-fetch-mode : no-cors
+---sec-fetch-dest : image
+---referer : http://localhost:9191/swagger-ui/index.html
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 21:23:27 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /swagger-ui/favicon-32x32.png]
+2024-08-19 21:23:27 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /swagger-ui/favicon-32x32.png]
+2024-08-19 21:23:27 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[GET] path=[/v3/api-docs/swagger-config] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "configUrl" : "/v3/api-docs/swagger-config",
+  "oauth2RedirectUrl" : "http://localhost:9191/swagger-ui/oauth2-redirect.html",
+  "urls" : [ {
+    "url" : "/v3/api-docs/api-service-1",
+    "name" : "api-service-1"
+  } ],
+  "validatorUrl" : ""
+}]
+2024-08-19 21:23:27 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /v3/api-docs/swagger-config]
+2024-08-19 21:23:27 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: af040670-76de-4f64-8e57-b6c7c7524091
+[PATH]: /v3/api-docs/api-service-1
+[QUERIES]: null
+[HEADERS]: 
+---host : localhost:9191
+---connection : keep-alive
+---sec-ch-ua : "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+---accept : application/json,*/*
+---sec-ch-ua-mobile : ?0
+---user-agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+---sec-ch-ua-platform : "Windows"
+---sec-fetch-site : same-origin
+---sec-fetch-mode : cors
+---sec-fetch-dest : empty
+---referer : http://localhost:9191/swagger-ui/index.html
+---accept-encoding : gzip, deflate, br, zstd
+---accept-language : en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 21:23:27 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /v3/api-docs/api-service-1]
+2024-08-19 21:23:28 INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 935 ms
+2024-08-19 21:23:28 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[GET] path=[/v3/api-docs/api-service-1] responseHeaders=[{Vary=Origin}] responseBody=["eyJvcGVuYXBpIjoiMy4wLjEiLCJpbmZvIjp7InRpdGxlIjoiQVBJIEZPUiBNWSBQUk9KRUNUIiwiZGVzY3JpcHRpb24iOiJBUEkgZm9yIG15IHByb2plY3QgYXQgS2llbkxvbmdCYW5rIiwibGljZW5zZSI6eyJuYW1lIjoiQVBJIExpY2Vuc2UifSwidmVyc2lvbiI6IjEuMC4wIn0sInNlcnZlcnMiOlt7InVybCI6Imh0dHA6Ly9sb2NhbGhvc3Q6OTE5MSIsImRlc2NyaXB0aW9uIjoiU2VydmVyVGVzdCJ9XSwicGF0aHMiOnsiL2FwaS92MS91c2Vycy97dXNlcklkfS91cGRhdGUiOnsicHV0Ijp7InRhZ3MiOlsiVXNlciBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJVcGRhdGUgdXNlciAgYnkgSUQiLCJkZXNjcmlwdGlvbiI6IkFQSSB1cGRhdGUgdXNlciBieSBpZCIsIm9wZXJhdGlvbklkIjoidXBkYXRlVXNlciIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJ1c2VySWQiLCJpbiI6InBhdGgiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50NjQifX1dLCJyZXF1ZXN0Qm9keSI6eyJjb250ZW50Ijp7ImFwcGxpY2F0aW9uL2pzb24iOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9Vc2VyVXBkYXRlUmVxdWVzdCJ9fX0sInJlcXVpcmVkIjp0cnVlfSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL3Byb2R1Y3RzL3Byb2R1Y3Qve3Byb2R1Y3RJZH0vdXBkYXRlIjp7InB1dCI6eyJ0YWdzIjpbIlByb2R1Y3QgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiVXBkYXRlIHByb2R1Y3QgYnkgaWQiLCJkZXNjcmlwdGlvbiI6IkFQSSB1cGRhdGUgcHJvZHVjdCIsIm9wZXJhdGlvbklkIjoidXBkYXRlUHJvZHVjdCIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJwcm9kdWN0SWQiLCJpbiI6InBhdGgiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50NjQifX1dLCJyZXF1ZXN0Qm9keSI6eyJjb250ZW50Ijp7ImFwcGxpY2F0aW9uL2pzb24iOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9Qcm9kdWN0VXBkYXRlUmVxdWVzdCJ9fX0sInJlcXVpcmVkIjp0cnVlfSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL2ltYWdlcy9pbWFnZS97aW1hZ2VJZH0vdXBkYXRlIjp7InB1dCI6eyJ0YWdzIjpbIkltYWdlIENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IlVwZGF0ZSBJbWFnZSBCeSBJZCIsImRlc2NyaXB0aW9uIjoiQVBJIHVwZGF0ZSBpbWFnZSBieSBpZCIsIm9wZXJhdGlvbklkIjoidXBkYXRlSW1hZ2UiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiaW1hZ2VJZCIsImluIjoicGF0aCIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9fV0sInJlcXVlc3RCb2R5Ijp7ImNvbnRlbnQiOnsiYXBwbGljYXRpb24vanNvbiI6eyJzY2hlbWEiOnsidHlwZSI6Im9iamVjdCIsInByb3BlcnRpZXMiOnsiZmlsZSI6eyJ0eXBlIjoic3RyaW5nIiwiZm9ybWF0IjoiYmluYXJ5In19fX19LCJyZXF1aXJlZCI6dHJ1ZX0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9jYXRlZ29yaWVzL2NhdGVnb3J5L3tpZH0vdXBkYXRlIjp7InB1dCI6eyJ0YWdzIjpbIkNhdGVnb3J5IENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IlVwZGF0ZSBDYXRlZ29yeSIsImRlc2NyaXB0aW9uIjoiQVBJIHVwZGF0ZSBjYXRlZ29yeSIsIm9wZXJhdGlvbklkIjoidXBkYXRlQ2F0ZWdvcnkiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiaWQiLCJpbiI6InBhdGgiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50NjQifX1dLCJyZXF1ZXN0Qm9keSI6eyJjb250ZW50Ijp7ImFwcGxpY2F0aW9uL2pzb24iOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9DYXRlZ29yeSJ9fX0sInJlcXVpcmVkIjp0cnVlfSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL2NhcnRJdGVtcy9jYXJ0L3tjYXJ0SWR9L2l0ZW0ve2l0ZW1JZH0vdXBkYXRlIjp7InB1dCI6eyJ0YWdzIjpbIkNhcnQgSXRlbSBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJVcGRhdGUgSXRlbSBRdWFudGl0eSIsImRlc2NyaXB0aW9uIjoiQVBJIHVwZGF0ZSBpdGVtIHF1YW50aXR5Iiwib3BlcmF0aW9uSWQiOiJ1cGRhdGVJdGVtUXVhbnRpdHkiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiY2FydElkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19LHsibmFtZSI6Iml0ZW1JZCIsImluIjoicGF0aCIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9fSx7Im5hbWUiOiJxdWFudGl0eSIsImluIjoicXVlcnkiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50MzIifX1dLCJyZXNwb25zZXMiOnsiMjAwIjp7ImRlc2NyaXB0aW9uIjoiT0siLCJjb250ZW50Ijp7IiovKiI6eyJzY2hlbWEiOnsiJHJlZiI6IiMvY29tcG9uZW50cy9zY2hlbWFzL0FwaVJlc3BvbnNlIn19fX19fX0sIi9hcGkvdjEvdXNlcnMvYWRkIjp7InBvc3QiOnsidGFncyI6WyJVc2VyIENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IkFkZCB1c2VyIiwiZGVzY3JpcHRpb24iOiJBUEkgY3JlYXRlIG5ldyB1c2VyIiwib3BlcmF0aW9uSWQiOiJjcmVhdGVVc2VyIiwicmVxdWVzdEJvZHkiOnsiY29udGVudCI6eyJhcHBsaWNhdGlvbi9qc29uIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQ3JlYXRlVXNlclJlcXVlc3QifX19LCJyZXF1aXJlZCI6dHJ1ZX0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9wcm9kdWN0cy9hZGQiOnsicG9zdCI6eyJ0YWdzIjpbIlByb2R1Y3QgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiQWRkIHByb2R1Y3QiLCJkZXNjcmlwdGlvbiI6IkFQSSBhZGQgbmV3IHByb2R1Y3QiLCJvcGVyYXRpb25JZCI6ImFkZFByb2R1Y3QiLCJyZXF1ZXN0Qm9keSI6eyJjb250ZW50Ijp7ImFwcGxpY2F0aW9uL2pzb24iOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BZGRQcm9kdWN0UmVxdWVzdCJ9fX0sInJlcXVpcmVkIjp0cnVlfSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL29yZGVycy9vcmRlciI6eyJwb3N0Ijp7InRhZ3MiOlsiT3JkZXIgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiQWRkIE9yZGVyIiwiZGVzY3JpcHRpb24iOiJBUEkgY3JlYXRlIG5ldyBvcmRlciIsIm9wZXJhdGlvbklkIjoiY3JlYXRlT3JkZXIiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoidXNlcklkIiwiaW4iOiJxdWVyeSIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9fV0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9pbWFnZXMvdXBsb2FkIjp7InBvc3QiOnsidGFncyI6WyJJbWFnZSBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJVcGxvYWQgSW1hZ2UgRm9yIFByb2R1Y3QiLCJkZXNjcmlwdGlvbiI6IkFQSSB1cGxvYWQgaW1hZ2UgZm9yIHByb2R1Y3QiLCJvcGVyYXRpb25JZCI6InNhdmVJbWFnZXMiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiZmlsZXMiLCJpbiI6InF1ZXJ5IiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiYXJyYXkiLCJpdGVtcyI6eyJ0eXBlIjoic3RyaW5nIiwiZm9ybWF0IjoiYmluYXJ5In19fSx7Im5hbWUiOiJwcm9kdWN0SWQiLCJpbiI6InF1ZXJ5IiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL2NhdGVnb3JpZXMvYWRkIjp7InBvc3QiOnsidGFncyI6WyJDYXRlZ29yeSBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJBZGQgQ2F0ZWdvcnkiLCJkZXNjcmlwdGlvbiI6IkFQSSBhZGQgbmV3IGNhdGVnb3J5Iiwib3BlcmF0aW9uSWQiOiJhZGRDYXRlZ29yeSIsInJlcXVlc3RCb2R5Ijp7ImNvbnRlbnQiOnsiYXBwbGljYXRpb24vanNvbiI6eyJzY2hlbWEiOnsiJHJlZiI6IiMvY29tcG9uZW50cy9zY2hlbWFzL0NhdGVnb3J5In19fSwicmVxdWlyZWQiOnRydWV9LCJyZXNwb25zZXMiOnsiMjAwIjp7ImRlc2NyaXB0aW9uIjoiT0siLCJjb250ZW50Ijp7IiovKiI6eyJzY2hlbWEiOnsiJHJlZiI6IiMvY29tcG9uZW50cy9zY2hlbWFzL0FwaVJlc3BvbnNlIn19fX19fX0sIi9hcGkvdjEvY2FydEl0ZW1zL2l0ZW0vYWRkIjp7InBvc3QiOnsidGFncyI6WyJDYXJ0IEl0ZW0gQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiQWRkIEl0ZW0gVG8gQ2FydCIsImRlc2NyaXB0aW9uIjoiQVBJIGFkZCBpdGVtIHRvIGNhcnQiLCJvcGVyYXRpb25JZCI6ImFkZEl0ZW1Ub0NhcnQiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoicHJvZHVjdElkIiwiaW4iOiJxdWVyeSIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9fSx7Im5hbWUiOiJxdWFudGl0eSIsImluIjoicXVlcnkiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50MzIifX1dLCJyZXNwb25zZXMiOnsiMjAwIjp7ImRlc2NyaXB0aW9uIjoiT0siLCJjb250ZW50Ijp7IiovKiI6eyJzY2hlbWEiOnsiJHJlZiI6IiMvY29tcG9uZW50cy9zY2hlbWFzL0FwaVJlc3BvbnNlIn19fX19fX0sIi9hcGkvdjEvYXV0aC9sb2dpbiI6eyJwb3N0Ijp7InRhZ3MiOlsiQXV0aCBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJVc2VyIExvZ2luIiwiZGVzY3JpcHRpb24iOiJBUEkgbG9naW4iLCJvcGVyYXRpb25JZCI6ImxvZ2luIiwicmVxdWVzdEJvZHkiOnsiY29udGVudCI6eyJhcHBsaWNhdGlvbi9qc29uIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvTG9naW5SZXF1ZXN0In19fSwicmVxdWlyZWQiOnRydWV9LCJyZXNwb25zZXMiOnsiMjAwIjp7ImRlc2NyaXB0aW9uIjoiT0siLCJjb250ZW50Ijp7IiovKiI6eyJzY2hlbWEiOnsiJHJlZiI6IiMvY29tcG9uZW50cy9zY2hlbWFzL0FwaVJlc3BvbnNlIn19fX19fX0sIi9hcGkvdjEvdXNlcnMve3VzZXJJZH0vdXNlciI6eyJnZXQiOnsidGFncyI6WyJVc2VyIENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IkdldCB1c2VyIGJ5IGlkIiwiZGVzY3JpcHRpb24iOiJBUEkgZ2V0IHVzZXIgYnkgaWQiLCJvcGVyYXRpb25JZCI6ImdldFVzZXJCeUlkIiwicGFyYW1ldGVycyI6W3sibmFtZSI6InVzZXJJZCIsImluIjoicGF0aCIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9fV0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9wcm9kdWN0cy9wcm9kdWN0cy97bmFtZX0vcHJvZHVjdHMiOnsiZ2V0Ijp7InRhZ3MiOlsiUHJvZHVjdCBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJHZXQgcHJvZHVjdCBieSBuYW1lIiwiZGVzY3JpcHRpb24iOiJBUEkgZ2V0IHByb2R1Y3QgYnkgbmFtZSIsIm9wZXJhdGlvbklkIjoiZ2V0UHJvZHVjdEJ5TmFtZSIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJuYW1lIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoic3RyaW5nIn19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL3Byb2R1Y3RzL3Byb2R1Y3RzL2J5L2NhdGVnb3J5LWFuZC1icmFuZCI6eyJnZXQiOnsidGFncyI6WyJQcm9kdWN0IENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IkdldCBwcm9kdWN0IGJ5IGNhdGVnb3J5IGFuZCBicmFuZCIsImRlc2NyaXB0aW9uIjoiQVBJIGdldCBwcm9kdWN0IGJ5IGNhdGVnb3J5IGFuZCBicmFuZCIsIm9wZXJhdGlvbklkIjoiZ2V0UHJvZHVjdEJ5Q2F0ZWdvcnlBbmRCcmFuZCIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJjYXRlZ29yeSIsImluIjoicXVlcnkiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJzdHJpbmcifX0seyJuYW1lIjoiYnJhbmQiLCJpbiI6InF1ZXJ5IiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoic3RyaW5nIn19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL3Byb2R1Y3RzL3Byb2R1Y3RzL2J5L2JyYW5kLWFuZC1uYW1lIjp7ImdldCI6eyJ0YWdzIjpbIlByb2R1Y3QgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiR2V0IHByb2R1Y3QgYnkgYnJhbmQgYW5kIG5hbWUiLCJkZXNjcmlwdGlvbiI6IkFQSSBnZXQgcHJvZHVjdCBieSBicmFuZCBhbmQgbmFtZSIsIm9wZXJhdGlvbklkIjoiZ2V0UHJvZHVjdEJ5QnJhbmRBbmROYW1lIiwicGFyYW1ldGVycyI6W3sibmFtZSI6ImJyYW5kTmFtZSIsImluIjoicXVlcnkiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJzdHJpbmcifX0seyJuYW1lIjoicHJvZHVjdE5hbWUiLCJpbiI6InF1ZXJ5IiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoic3RyaW5nIn19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL3Byb2R1Y3RzL3Byb2R1Y3Qve3Byb2R1Y3RJZH0vcHJvZHVjdCI6eyJnZXQiOnsidGFncyI6WyJQcm9kdWN0IENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IkdldCBwcm9kdWN0IGJ5IGlkIiwiZGVzY3JpcHRpb24iOiJBUEkgZ2V0IHByb2R1Y3QgYnkgaWQiLCJvcGVyYXRpb25JZCI6ImdldFByb2R1Y3RCeUlkIiwicGFyYW1ldGVycyI6W3sibmFtZSI6InByb2R1Y3RJZCIsImluIjoicGF0aCIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9fV0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9wcm9kdWN0cy9wcm9kdWN0L3tjYXRlZ29yeX0vYWxsL3Byb2R1Y3RzIjp7ImdldCI6eyJ0YWdzIjpbIlByb2R1Y3QgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiR2V0IHByb2R1Y3QgYnkgY2F0ZWdvcnkiLCJkZXNjcmlwdGlvbiI6IkFQSSBnZXQgcHJvZHVjdCBieSBjYXRlZ29yeSIsIm9wZXJhdGlvbklkIjoiZmluZFByb2R1Y3RCeUNhdGVnb3J5IiwicGFyYW1ldGVycyI6W3sibmFtZSI6ImNhdGVnb3J5IiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoic3RyaW5nIn19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL3Byb2R1Y3RzL3Byb2R1Y3QvY291bnQvYnktYnJhbmQvYW5kLW5hbWUiOnsiZ2V0Ijp7InRhZ3MiOlsiUHJvZHVjdCBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJDb3VudCBwcm9kdWN0IGJ5IGJyYW5kIGFuZCBuYW1lIiwiZGVzY3JpcHRpb24iOiJBUEkgY291bnQgcHJvZHVjdCBieSBicmFuZCBhbmQgbmFtZSIsIm9wZXJhdGlvbklkIjoiY291bnRQcm9kdWN0c0J5QnJhbmRBbmROYW1lIiwicGFyYW1ldGVycyI6W3sibmFtZSI6ImJyYW5kIiwiaW4iOiJxdWVyeSIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6InN0cmluZyJ9fSx7Im5hbWUiOiJuYW1lIiwiaW4iOiJxdWVyeSIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6InN0cmluZyJ9fV0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9wcm9kdWN0cy9wcm9kdWN0L2J5LWJyYW5kIjp7ImdldCI6eyJ0YWdzIjpbIlByb2R1Y3QgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiR2V0IHByb2R1Y3QgYnkgYnJhbmQiLCJkZXNjcmlwdGlvbiI6IkFQSSBnZXQgcHJvZHVjdCBieSBicmFuZCIsIm9wZXJhdGlvbklkIjoiZmluZFByb2R1Y3RCeUJyYW5kIiwicGFyYW1ldGVycyI6W3sibmFtZSI6ImJyYW5kIiwiaW4iOiJxdWVyeSIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6InN0cmluZyJ9fV0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9wcm9kdWN0cy9hbGwiOnsiZ2V0Ijp7InRhZ3MiOlsiUHJvZHVjdCBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJHZXQgYWxsIHByb2R1Y3QiLCJkZXNjcmlwdGlvbiI6IkFQSSBnZXQgYWxsIHByb2R1Y3QiLCJvcGVyYXRpb25JZCI6ImdldEFsbFByb2R1Y3RzIiwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL29yZGVycy97dXNlcklkfS9vcmRlciI6eyJnZXQiOnsidGFncyI6WyJPcmRlciBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJHZXQgT3JkZXIgQnkgVXNlcklkIiwiZGVzY3JpcHRpb24iOiJBUEkgZ2V0IG9yZGVyIGJ5IHVzZXJJZCIsIm9wZXJhdGlvbklkIjoiZ2V0VXNlck9yZGVycyIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJ1c2VySWQiLCJpbiI6InBhdGgiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50NjQifX1dLCJyZXNwb25zZXMiOnsiMjAwIjp7ImRlc2NyaXB0aW9uIjoiT0siLCJjb250ZW50Ijp7IiovKiI6eyJzY2hlbWEiOnsiJHJlZiI6IiMvY29tcG9uZW50cy9zY2hlbWFzL0FwaVJlc3BvbnNlIn19fX19fX0sIi9hcGkvdjEvb3JkZXJzL3tvcmRlcklkfS9vcmRlciI6eyJnZXQiOnsidGFncyI6WyJPcmRlciBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJHZXQgT3JkZXIgQnkgSWQiLCJkZXNjcmlwdGlvbiI6IkFQSSBnZXQgb3JkZXIgYnkgaWQiLCJvcGVyYXRpb25JZCI6ImdldE9yZGVyQnlJZCIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJvcmRlcklkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL2ltYWdlcy9pbWFnZS9kb3dubG9hZC97aW1hZ2VJZH0iOnsiZ2V0Ijp7InRhZ3MiOlsiSW1hZ2UgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiRG93bmxvYWQgSW1hZ2UgQnkgSWQiLCJkZXNjcmlwdGlvbiI6IkFQSSBkb3dubG9hZCBpbWFnZSBieSBpZCIsIm9wZXJhdGlvbklkIjoiZG93bmxvYWRJbWFnZSIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJpbWFnZUlkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7InR5cGUiOiJzdHJpbmciLCJmb3JtYXQiOiJiaW5hcnkifX19fX19fSwiL2FwaS92MS9jYXRlZ29yaWVzL2NhdGVnb3J5L3tuYW1lfS9jYXRlZ29yeSI6eyJnZXQiOnsidGFncyI6WyJDYXRlZ29yeSBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJHZXQgQ2F0ZWdvcnkgQnkgTmFtZSIsImRlc2NyaXB0aW9uIjoiQVBJIGdldCBjYXRlZ29yeSBieSBuYW1lIiwib3BlcmF0aW9uSWQiOiJnZXRDYXRlZ29yeUJ5TmFtZSIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJuYW1lIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoic3RyaW5nIn19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL2NhdGVnb3JpZXMvY2F0ZWdvcnkve2lkfS9jYXRlZ29yeSI6eyJnZXQiOnsidGFncyI6WyJDYXRlZ29yeSBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJHZXQgQ2F0ZWdvcnkgQnkgSWQiLCJkZXNjcmlwdGlvbiI6IkFQSSBnZXQgY2F0ZWdvcnkgYnkgaWQiLCJvcGVyYXRpb25JZCI6ImdldENhdGVnb3J5QnlJZCIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJpZCIsImluIjoicGF0aCIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9fV0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9jYXRlZ29yaWVzL2FsbCI6eyJnZXQiOnsidGFncyI6WyJDYXRlZ29yeSBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJHZXQgQWxsIENhdGVnb3JpZXMiLCJkZXNjcmlwdGlvbiI6IkFQSSBnZXQgYWxsIGNhdGVnb3JpZXMiLCJvcGVyYXRpb25JZCI6ImdldEFsbENhdGVnb3JpZXMiLCJyZXNwb25zZXMiOnsiMjAwIjp7ImRlc2NyaXB0aW9uIjoiT0siLCJjb250ZW50Ijp7IiovKiI6eyJzY2hlbWEiOnsiJHJlZiI6IiMvY29tcG9uZW50cy9zY2hlbWFzL0FwaVJlc3BvbnNlIn19fX19fX0sIi9hcGkvdjEvY2FydHMve2NhcnRJZH0vbXktY2FydCI6eyJnZXQiOnsidGFncyI6WyJDYXJ0IENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IkdldCBDYXJ0IEJ5IElkIiwiZGVzY3JpcHRpb24iOiJBUEkgZ2V0IGNhcmQgYnkgaWQiLCJvcGVyYXRpb25JZCI6ImdldENhcnQiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiY2FydElkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL2NhcnRzL3tjYXJ0SWR9L2NhcnQvdG90YWwtcHJpY2UiOnsiZ2V0Ijp7InRhZ3MiOlsiQ2FydCBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJHZXQgVG90YWwgQW1vdW50IiwiZGVzY3JpcHRpb24iOiJBUEkgZ2V0IHRvdGFsIGFtb3VudCIsIm9wZXJhdGlvbklkIjoiZ2V0VG90YWxBbW91bnQiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiY2FydElkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL3VzZXJzL3t1c2VySWR9L2RlbGV0ZSI6eyJkZWxldGUiOnsidGFncyI6WyJVc2VyIENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IkRlbGV0ZSB1c2VyIGJ5IGlkIiwiZGVzY3JpcHRpb24iOiJBUEkgZGVsZXRlIHVzZXIgYnkgaWQiLCJvcGVyYXRpb25JZCI6ImRlbGV0ZVVzZXIiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoidXNlcklkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL3Byb2R1Y3RzL3Byb2R1Y3Qve3Byb2R1Y3RJZH0vZGVsZXRlIjp7ImRlbGV0ZSI6eyJ0YWdzIjpbIlByb2R1Y3QgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiRGVsZXRlIHByb2R1Y3QiLCJkZXNjcmlwdGlvbiI6IkFQSSBkZWxldGUgcHJvZHVjdCIsIm9wZXJhdGlvbklkIjoiZGVsZXRlUHJvZHVjdCIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJwcm9kdWN0SWQiLCJpbiI6InBhdGgiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50NjQifX1dLCJyZXNwb25zZXMiOnsiMjAwIjp7ImRlc2NyaXB0aW9uIjoiT0siLCJjb250ZW50Ijp7IiovKiI6eyJzY2hlbWEiOnsiJHJlZiI6IiMvY29tcG9uZW50cy9zY2hlbWFzL0FwaVJlc3BvbnNlIn19fX19fX0sIi9hcGkvdjEvaW1hZ2VzL2ltYWdlL3tpbWFnZUlkfS9kZWxldGUiOnsiZGVsZXRlIjp7InRhZ3MiOlsiSW1hZ2UgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiRGVsZXRlIEltYWdlIEJ5IElkIiwiZGVzY3JpcHRpb24iOiJBUEkgZGVsZXRlIGltYWdlIGJ5IGlkIiwib3BlcmF0aW9uSWQiOiJkZWxldGVJbWFnZSIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJpbWFnZUlkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL2NhdGVnb3JpZXMvY2F0ZWdvcnkve2lkfS9kZWxldGUiOnsiZGVsZXRlIjp7InRhZ3MiOlsiQ2F0ZWdvcnkgQ29udHJvbGxlciJdLCJzdW1tYXJ5IjoiRGVsZXRlIENhdGVnb3J5IiwiZGVzY3JpcHRpb24iOiJBUEkgZGVsZXRlIGNhdGVnb3J5Iiwib3BlcmF0aW9uSWQiOiJkZWxldGVDYXRlZ29yeSIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJpZCIsImluIjoicGF0aCIsInJlcXVpcmVkIjp0cnVlLCJzY2hlbWEiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9fV0sInJlc3BvbnNlcyI6eyIyMDAiOnsiZGVzY3JpcHRpb24iOiJPSyIsImNvbnRlbnQiOnsiKi8qIjp7InNjaGVtYSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQXBpUmVzcG9uc2UifX19fX19fSwiL2FwaS92MS9jYXJ0cy97Y2FydElkfS9jbGVhciI6eyJkZWxldGUiOnsidGFncyI6WyJDYXJ0IENvbnRyb2xsZXIiXSwic3VtbWFyeSI6IkNsZWFyIENhcnQgQnkgSWQiLCJkZXNjcmlwdGlvbiI6IkFQSSBjbGVhciBjYXJ0IGJ5IGlkIiwib3BlcmF0aW9uSWQiOiJjbGVhckNhcnQiLCJwYXJhbWV0ZXJzIjpbeyJuYW1lIjoiY2FydElkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19LCIvYXBpL3YxL2NhcnRJdGVtcy9jYXJ0L3tjYXJ0SWR9L2l0ZW0ve2l0ZW1JZH0vcmVtb3ZlIjp7ImRlbGV0ZSI6eyJ0YWdzIjpbIkNhcnQgSXRlbSBDb250cm9sbGVyIl0sInN1bW1hcnkiOiJEZWxldGUgSXRlbSBGcm9tIENhcnQiLCJkZXNjcmlwdGlvbiI6IkFQSSBkZWxldGUgaXRlbSBmcm9tIGNhcnQiLCJvcGVyYXRpb25JZCI6InJlbW92ZUl0ZW1Gcm9tQ2FydCIsInBhcmFtZXRlcnMiOlt7Im5hbWUiOiJjYXJ0SWQiLCJpbiI6InBhdGgiLCJyZXF1aXJlZCI6dHJ1ZSwic2NoZW1hIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50NjQifX0seyJuYW1lIjoiaXRlbUlkIiwiaW4iOiJwYXRoIiwicmVxdWlyZWQiOnRydWUsInNjaGVtYSI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In19XSwicmVzcG9uc2VzIjp7IjIwMCI6eyJkZXNjcmlwdGlvbiI6Ik9LIiwiY29udGVudCI6eyIqLyoiOnsic2NoZW1hIjp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9BcGlSZXNwb25zZSJ9fX19fX19fSwiY29tcG9uZW50cyI6eyJzY2hlbWFzIjp7IlVzZXJVcGRhdGVSZXF1ZXN0Ijp7InR5cGUiOiJvYmplY3QiLCJwcm9wZXJ0aWVzIjp7ImZpcnN0TmFtZSI6eyJ0eXBlIjoic3RyaW5nIn0sImxhc3ROYW1lIjp7InR5cGUiOiJzdHJpbmcifX19LCJBcGlSZXNwb25zZSI6eyJ0eXBlIjoib2JqZWN0IiwicHJvcGVydGllcyI6eyJtZXNzYWdlIjp7InR5cGUiOiJzdHJpbmcifSwiZGF0YSI6eyJ0eXBlIjoib2JqZWN0In19fSwiQ2F0ZWdvcnkiOnsidHlwZSI6Im9iamVjdCIsInByb3BlcnRpZXMiOnsiaWQiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQ2NCJ9LCJuYW1lIjp7InR5cGUiOiJzdHJpbmcifX19LCJQcm9kdWN0VXBkYXRlUmVxdWVzdCI6eyJ0eXBlIjoib2JqZWN0IiwicHJvcGVydGllcyI6eyJpZCI6eyJ0eXBlIjoiaW50ZWdlciIsImZvcm1hdCI6ImludDY0In0sIm5hbWUiOnsidHlwZSI6InN0cmluZyJ9LCJicmFuZCI6eyJ0eXBlIjoic3RyaW5nIn0sInByaWNlIjp7InR5cGUiOiJudW1iZXIifSwiaW52ZW50b3J5Ijp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50MzIifSwiZGVzY3JpcHRpb24iOnsidHlwZSI6InN0cmluZyJ9LCJjYXRlZ29yeSI6eyIkcmVmIjoiIy9jb21wb25lbnRzL3NjaGVtYXMvQ2F0ZWdvcnkifX19LCJDcmVhdGVVc2VyUmVxdWVzdCI6eyJ0eXBlIjoib2JqZWN0IiwicHJvcGVydGllcyI6eyJmaXJzdE5hbWUiOnsidHlwZSI6InN0cmluZyJ9LCJsYXN0TmFtZSI6eyJ0eXBlIjoic3RyaW5nIn0sImVtYWlsIjp7InR5cGUiOiJzdHJpbmcifSwicGFzc3dvcmQiOnsidHlwZSI6InN0cmluZyJ9fX0sIkFkZFByb2R1Y3RSZXF1ZXN0Ijp7InR5cGUiOiJvYmplY3QiLCJwcm9wZXJ0aWVzIjp7ImlkIjp7InR5cGUiOiJpbnRlZ2VyIiwiZm9ybWF0IjoiaW50NjQifSwibmFtZSI6eyJ0eXBlIjoic3RyaW5nIn0sImJyYW5kIjp7InR5cGUiOiJzdHJpbmcifSwicHJpY2UiOnsidHlwZSI6Im51bWJlciJ9LCJpbnZlbnRvcnkiOnsidHlwZSI6ImludGVnZXIiLCJmb3JtYXQiOiJpbnQzMiJ9LCJkZXNjcmlwdGlvbiI6eyJ0eXBlIjoic3RyaW5nIn0sImNhdGVnb3J5Ijp7IiRyZWYiOiIjL2NvbXBvbmVudHMvc2NoZW1hcy9DYXRlZ29yeSJ9fX0sIkxvZ2luUmVxdWVzdCI6eyJyZXF1aXJlZCI6WyJlbWFpbCIsInBhc3N3b3JkIl0sInR5cGUiOiJvYmplY3QiLCJwcm9wZXJ0aWVzIjp7ImVtYWlsIjp7InR5cGUiOiJzdHJpbmcifSwicGFzc3dvcmQiOnsidHlwZSI6InN0cmluZyJ9fX19fX0="]
+2024-08-19 21:23:28 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /v3/api-docs/api-service-1]
+2024-08-19 21:28:00 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-19 21:28:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-19 21:28:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-08-19 21:38:44 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-19 21:38:44 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Starting KlbProjectApplication using Java 17.0.12 with PID 2888 (C:\Users\ADMIN\IdeaProjects\KLB-project\KLB-project\target\classes started by ADMIN in C:\Users\ADMIN\IdeaProjects\KLB-project)
+2024-08-19 21:38:44 INFO  com.KLBproject.KLB_project.KlbProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-19 21:38:45 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-19 21:38:45 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 99 ms. Found 8 JPA repository interfaces.
+2024-08-19 21:38:46 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 9191 (http)
+2024-08-19 21:38:46 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9191"]
+2024-08-19 21:38:46 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-19 21:38:46 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-19 21:38:46 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-19 21:38:46 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1868 ms
+2024-08-19 21:38:46 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-19 21:38:46 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-19 21:38:46 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-19 21:38:47 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-19 21:38:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-19 21:38:47 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e7b3e54
+2024-08-19 21:38:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-19 21:38:47 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-19 21:38:48 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-19 21:38:48 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-19 21:38:49 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Filter 'logFilter' configured for use
+2024-08-19 21:38:49 INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-08-19 21:38:49 WARN  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-08-19 21:38:49 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-19 21:38:50 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9191"]
+2024-08-19 21:38:50 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 9191 (http) with context path '/'
+2024-08-19 21:38:50 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Started KlbProjectApplication in 6.18 seconds (process running for 7.019)
+2024-08-19 21:38:53 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-19 21:38:53 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-19 21:38:53 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-08-19 21:38:53 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: bef0a7c4-1b5c-45b1-9367-8110caac10be
+[PATH]: /api/v1/auth/login
+[QUERIES]: null
+[HEADERS]: 
+---content-type : application/json
+---user-agent : PostmanRuntime/7.41.0
+---accept : */*
+---postman-token : e6b41fbe-3a0b-4d55-b962-a9736e6555ff
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---content-length : 61
+---cookie : JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 21:38:53 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [POST /api/v1/auth/login]
+2024-08-19 21:38:53 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - REQUEST method=[POST] path=[/api/v1/auth/login] headers=[{content-length=61, cookie=JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235, postman-token=e6b41fbe-3a0b-4d55-b962-a9736e6555ff, host=localhost:9191, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.41.0, accept=*/*}] body=[{
+  "email" : "user3@email.com",
+  "password" : "123456"
+}]
+2024-08-19 21:38:54 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[POST] path=[/api/v1/auth/login] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "message" : "Login Successful",
+  "data" : {
+    "id" : 3,
+    "token" : "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyM0BlbWFpbC5jb20iLCJpZCI6Mywicm9sZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTcyNDA3ODMzNCwiZXhwIjoxNzI0MDgxOTM0fQ.evdL2ASmqM2-H2HbGqGHVS4L65pHrH3MERd-1Cub8oE"
+  }
+}]
+2024-08-19 21:38:54 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/v1/auth/login, payload={
+    "email":"user3@email.com",
+    "password":"123456"
+}]
+2024-08-19 21:57:52 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 3ae85fae-35ea-46f3-9b5d-ca71b8ae13d9
+[PATH]: /api/v1/products/all
+[QUERIES]: null
+[HEADERS]: 
+---accept-language : en
+---user-agent : PostmanRuntime/7.41.0
+---accept : */*
+---postman-token : e156b001-c755-44f3-8df5-849dfdf341d0
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---cookie : JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 21:57:52 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /api/v1/products/all]
+2024-08-19 21:57:52 INFO  com.KLBproject.KLB_project.controller.ProductController - Task started.
+2024-08-19 21:57:52 INFO  com.KLBproject.KLB_project.controller.ProductController - Task finished.
+2024-08-19 21:57:52 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[GET] path=[/api/v1/products/all] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "message" : "get all product successfully!",
+  "data" : [ {
+    "id" : 1,
+    "name" : "Samsung TV2",
+    "brand" : "Samsung",
+    "price" : 520.00,
+    "inventory" : 50,
+    "description" : "Samsung smart TV2",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ {
+      "id" : 1,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/1"
+    }, {
+      "id" : 2,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/2"
+    }, {
+      "id" : 3,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/3"
+    }, {
+      "id" : 4,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/4"
+    } ]
+  }, {
+    "id" : 2,
+    "name" : "Samsung TV3",
+    "brand" : "Samsung",
+    "price" : 500.00,
+    "inventory" : 40,
+    "description" : "Samsung smart TV3",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 3,
+    "name" : "Apple TV 1",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 5,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 4,
+    "name" : "Apple TV 15",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 10,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  } ]
+}]
+2024-08-19 21:57:52 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/v1/products/all]
+2024-08-19 21:58:53 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 8a5850d3-47b6-45cb-9866-4f09c2e8f8a8
+[PATH]: /api/v1/users/8/delete
+[QUERIES]: null
+[HEADERS]: 
+---user-agent : PostmanRuntime/7.41.0
+---accept : */*
+---postman-token : ab51cc93-d76a-4372-96ef-8dd30988d32b
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---cookie : JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235
+LOGGING REQUEST-----------------------------------
+
+2024-08-19 21:58:53 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [DELETE /api/v1/users/8/delete]
+2024-08-19 21:58:53 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[DELETE] path=[/api/v1/users/8/delete] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "message" : "Delete User Success!",
+  "data" : null
+}]
+2024-08-19 21:58:53 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : DELETE /api/v1/users/8/delete]
+2024-08-19 21:59:48 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-19 21:59:48 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-19 21:59:48 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

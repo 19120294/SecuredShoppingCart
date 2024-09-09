@@ -1,0 +1,156 @@
+2024-08-18 15:49:04 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-08-18 15:49:04 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Starting KlbProjectApplication using Java 17.0.12 with PID 19800 (C:\Users\ADMIN\IdeaProjects\KLB-project\KLB-project\target\classes started by ADMIN in C:\Users\ADMIN\IdeaProjects\KLB-project)
+2024-08-18 15:49:04 INFO  com.KLBproject.KLB_project.KlbProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2024-08-18 15:49:05 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-18 15:49:05 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 276 ms. Found 8 JPA repository interfaces.
+2024-08-18 15:49:06 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 9191 (http)
+2024-08-18 15:49:06 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9191"]
+2024-08-18 15:49:06 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-08-18 15:49:06 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-18 15:49:06 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-08-18 15:49:06 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2485 ms
+2024-08-18 15:49:06 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-18 15:49:07 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-18 15:49:07 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-08-18 15:49:07 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-18 15:49:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-08-18 15:49:08 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@622ba721
+2024-08-18 15:49:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-08-18 15:49:08 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-18 15:49:09 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-18 15:49:10 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 15:49:10 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Filter 'logFilter' configured for use
+2024-08-18 15:49:11 INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-08-18 15:49:11 WARN  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-08-18 15:49:11 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-18 15:49:12 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9191"]
+2024-08-18 15:49:12 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 9191 (http) with context path '/'
+2024-08-18 15:49:12 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Started KlbProjectApplication in 8.603 seconds (process running for 9.96)
+2024-08-18 15:49:18 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-18 15:49:18 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-18 15:49:18 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-08-18 15:49:18 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: bbc6bd7f-a4d7-4e56-ab0a-01b4a332b005
+[PATH]: /api/v1/products/product/2/product
+[QUERIES]: null
+[HEADERS]: 
+---accept-language : vi
+---user-agent : PostmanRuntime/7.41.0
+---accept : */*
+---postman-token : cc022691-7487-49cc-8739-01482fba11a2
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---cookie : JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235
+LOGGING REQUEST-----------------------------------
+
+2024-08-18 15:49:18 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /api/v1/products/product/2/product]
+2024-08-18 15:49:18 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[GET] path=[/api/v1/products/product/2/product] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "message" : "Lấy thông tin sản phẩm thành công",
+  "data" : {
+    "id" : 2,
+    "name" : "Samsung TV3",
+    "brand" : "Samsung",
+    "price" : 500.00,
+    "inventory" : 40,
+    "description" : "Samsung smart TV3",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }
+}]
+2024-08-18 15:49:18 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/v1/products/product/2/product]
+2024-08-18 15:49:29 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: ea6d53e5-415a-45dc-9f38-2586b959d69b
+[PATH]: /api/v1/products/all
+[QUERIES]: null
+[HEADERS]: 
+---accept-language : fr
+---user-agent : PostmanRuntime/7.41.0
+---accept : */*
+---postman-token : dab84414-2635-4273-a62a-0450fc0e3963
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---cookie : JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235
+LOGGING REQUEST-----------------------------------
+
+2024-08-18 15:49:29 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /api/v1/products/all]
+2024-08-18 15:49:29 INFO  com.KLBproject.KLB_project.controller.ProductController - Task started.
+2024-08-18 15:49:29 INFO  com.KLBproject.KLB_project.controller.ProductController - Task finished.
+2024-08-18 15:49:29 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[GET] path=[/api/v1/products/all] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "message" : "obtenir tous les produits avec succès",
+  "data" : [ {
+    "id" : 1,
+    "name" : "Samsung TV2",
+    "brand" : "Samsung",
+    "price" : 520.00,
+    "inventory" : 50,
+    "description" : "Samsung smart TV2",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ {
+      "id" : 1,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/1"
+    }, {
+      "id" : 2,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/2"
+    }, {
+      "id" : 3,
+      "fileName" : "img1.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/3"
+    }, {
+      "id" : 4,
+      "fileName" : "img2.jpg",
+      "downloadUrl" : "/api/v1/images/image/download/4"
+    } ]
+  }, {
+    "id" : 2,
+    "name" : "Samsung TV3",
+    "brand" : "Samsung",
+    "price" : 500.00,
+    "inventory" : 40,
+    "description" : "Samsung smart TV3",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 3,
+    "name" : "Apple TV 1",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 5,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }, {
+    "id" : 4,
+    "name" : "Apple TV 15",
+    "brand" : "Apple",
+    "price" : 1000.00,
+    "inventory" : 10,
+    "description" : "Apple Smart TV ",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  } ]
+}]
+2024-08-18 15:49:29 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/v1/products/all]
+2024-08-18 15:49:55 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-18 15:49:55 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-18 15:49:55 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

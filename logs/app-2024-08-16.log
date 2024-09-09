@@ -1,0 +1,40 @@
+2024-08-16 16:45:01 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-16 16:45:01 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-08-16 16:45:01 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-08-16 16:45:01 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: bd4318ca-81ee-4f1e-9ee5-5debf538bc88
+[PATH]: /api/v1/products/product/2/product
+[QUERIES]: null
+[HEADERS]: 
+---accept-language : vi
+---user-agent : PostmanRuntime/7.41.0
+---accept : */*
+---postman-token : 297d893a-90e3-4554-a266-7247a7a75632
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---cookie : JSESSIONID=7BF36AD8802CA2ABB45E5A023A702235
+LOGGING REQUEST-----------------------------------
+
+2024-08-16 16:45:01 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [GET /api/v1/products/product/2/product]
+2024-08-16 16:45:01 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[GET] path=[/api/v1/products/product/2/product] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "message" : "Lấy thông tin sản phẩm thành công",
+  "data" : {
+    "id" : 2,
+    "name" : "Samsung TV3",
+    "brand" : "Samsung",
+    "price" : 500.00,
+    "inventory" : 40,
+    "description" : "Samsung smart TV3",
+    "category" : {
+      "id" : 1,
+      "name" : "Electronics"
+    },
+    "images" : [ ]
+  }
+}]
+2024-08-16 16:45:01 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : GET /api/v1/products/product/2/product]
+2024-08-16 16:48:59 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-08-16 16:48:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-08-16 16:48:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

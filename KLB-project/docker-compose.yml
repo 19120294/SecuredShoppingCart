@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_DATABASE: project_klb
+      MYSQL_ROOT_PASSWORD: 123
+    ports:
+      - "3336:3306"
+
+  klb-project:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - mysql
+    ports:
+      - "9191:9191"
+    environment:
+
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/project_klb?createDatabaseIfNotExist=true
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=123
+    # Đặt biến môi trường dựa trên môi trường Docker

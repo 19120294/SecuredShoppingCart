@@ -1,0 +1,284 @@
+2024-09-09 00:27:29 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-09 00:27:30 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Starting KlbProjectApplication using Java 17.0.12 with PID 12848 (C:\Users\ADMIN\IdeaProjects\KLB-project\KLB-project\target\classes started by ADMIN in C:\Users\ADMIN\IdeaProjects\KLB-project)
+2024-09-09 00:27:30 INFO  com.KLBproject.KLB_project.KlbProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-09 00:27:30 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-09 00:27:30 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 99 ms. Found 8 JPA repository interfaces.
+2024-09-09 00:27:31 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 9191 (http)
+2024-09-09 00:27:31 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9191"]
+2024-09-09 00:27:31 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-09 00:27:31 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-09 00:27:31 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-09 00:27:31 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1485 ms
+2024-09-09 00:27:31 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-09 00:27:31 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-09 00:27:31 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-09 00:27:31 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-09 00:27:31 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-09 00:27:32 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b2f7527
+2024-09-09 00:27:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-09 00:27:32 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-09 00:27:33 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-09 00:27:33 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 00:27:33 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Filter 'logFilter' configured for use
+2024-09-09 00:27:33 INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-09-09 00:27:33 WARN  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-09 00:27:34 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-09 00:27:34 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9191"]
+2024-09-09 00:27:34 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 9191 (http) with context path '/'
+2024-09-09 00:27:34 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Started KlbProjectApplication in 5.033 seconds (process running for 5.76)
+2024-09-09 00:27:50 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-09 00:27:50 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-09 00:27:50 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-09-09 00:27:50 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 9945242a-d027-42ed-8a26-78b4baae8806
+[PATH]: /api/v1/users/add
+[QUERIES]: null
+[HEADERS]: 
+---content-type : application/json
+---user-agent : PostmanRuntime/7.41.2
+---accept : */*
+---postman-token : b9d0c366-f8a9-41ac-a7ec-7740e7c3256a
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---content-length : 115
+LOGGING REQUEST-----------------------------------
+
+2024-09-09 00:27:50 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [POST /api/v1/users/add]
+2024-09-09 00:27:50 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - REQUEST method=[POST] path=[/api/v1/users/add] headers=[{content-length=115, postman-token=b9d0c366-f8a9-41ac-a7ec-7740e7c3256a, host=localhost:9191, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.41.2, accept=*/*}] body=[{
+  "firstName" : "Test",
+  "lastName" : "Test",
+  "email" : "emailtest4@email.com",
+  "password" : "123456"
+}]
+2024-09-09 00:27:50 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[POST] path=[/api/v1/users/add] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "status" : 409,
+  "message" : "Oops!emailtest4@email.com already exists!"
+}]
+2024-09-09 00:27:50 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/v1/users/add, payload={
+    "firstName":"Test",
+    "lastName":"Test",
+    "email":"emailtest4@email.com",
+    "password":"123456"
+}]
+2024-09-09 00:28:09 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 472a37e6-0343-4120-b9d8-f9cb9013d032
+[PATH]: /api/v1/users/add
+[QUERIES]: null
+[HEADERS]: 
+---content-type : application/json
+---user-agent : PostmanRuntime/7.41.2
+---accept : */*
+---postman-token : 579a468a-1c32-4e22-b104-3993d98f5341
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---content-length : 115
+LOGGING REQUEST-----------------------------------
+
+2024-09-09 00:28:09 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [POST /api/v1/users/add]
+2024-09-09 00:28:09 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - REQUEST method=[POST] path=[/api/v1/users/add] headers=[{content-length=115, postman-token=579a468a-1c32-4e22-b104-3993d98f5341, host=localhost:9191, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.41.2, accept=*/*}] body=[{
+  "firstName" : "Test",
+  "lastName" : "Test",
+  "email" : "emailtest5@email.com",
+  "password" : "123456"
+}]
+2024-09-09 00:28:09 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[POST] path=[/api/v1/users/add] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "status" : 201,
+  "message" : "Create User Success!",
+  "data" : {
+    "id" : 15,
+    "firstName" : "Test",
+    "lastName" : "Test",
+    "email" : "emailtest5@email.com",
+    "orders" : null,
+    "cart" : null
+  }
+}]
+2024-09-09 00:28:09 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/v1/users/add, payload={
+    "firstName":"Test",
+    "lastName":"Test",
+    "email":"emailtest5@email.com",
+    "password":"123456"
+}]
+2024-09-09 00:28:29 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 3050e49d-0ee4-41ef-9be5-4a191e034117
+[PATH]: /api/v1/users/add
+[QUERIES]: null
+[HEADERS]: 
+---content-type : application/json
+---user-agent : PostmanRuntime/7.41.2
+---accept : */*
+---postman-token : 65b49a11-dc60-4321-baf5-9db8903b477a
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---content-length : 111
+LOGGING REQUEST-----------------------------------
+
+2024-09-09 00:28:29 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [POST /api/v1/users/add]
+2024-09-09 00:28:29 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - REQUEST method=[POST] path=[/api/v1/users/add] headers=[{content-length=111, postman-token=65b49a11-dc60-4321-baf5-9db8903b477a, host=localhost:9191, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.41.2, accept=*/*}] body=[{
+  "firstName" : "",
+  "lastName" : "Test",
+  "email" : "emailtest5@email.com",
+  "password" : "123456"
+}]
+2024-09-09 00:28:29 WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.KLBproject.KLB_project.response.ResponseData<com.KLBproject.KLB_project.dto.UserDto> com.KLBproject.KLB_project.controller.UserController.createUser(com.KLBproject.KLB_project.request.CreateUserRequest): [Field error in object 'createUserRequest' on field 'firstName': rejected value []; codes [NotBlank.createUserRequest.firstName,NotBlank.firstName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.firstName,firstName]; arguments []; default message [firstName]]; default message [First Name must be not blank]] ]
+2024-09-09 00:28:29 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/v1/users/add, payload={
+    "firstName":"",
+    "lastName":"Test",
+    "email":"emailtest5@email.com",
+    "password":"123456"
+}]
+2024-09-09 00:28:29 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[POST] path=[/error] responseHeaders=[{X-Frame-Options=DENY, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, X-Content-Type-Options=nosniff, Vary=Origin, Pragma=no-cache, Expires=0, X-XSS-Protection=0}] responseBody=[{
+  "timestamp" : 1725816509913,
+  "status" : 400,
+  "error" : "Bad Request",
+  "path" : "/api/v1/users/add"
+}]
+2024-09-09 00:33:27 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 00:33:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-09 00:33:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-09 00:33:31 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-09 00:33:31 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Starting KlbProjectApplication using Java 17.0.12 with PID 35572 (C:\Users\ADMIN\IdeaProjects\KLB-project\KLB-project\target\classes started by ADMIN in C:\Users\ADMIN\IdeaProjects\KLB-project)
+2024-09-09 00:33:31 INFO  com.KLBproject.KLB_project.KlbProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-09 00:33:31 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-09 00:33:32 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 105 ms. Found 8 JPA repository interfaces.
+2024-09-09 00:33:32 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 9191 (http)
+2024-09-09 00:33:32 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9191"]
+2024-09-09 00:33:32 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-09 00:33:32 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-09 00:33:32 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-09 00:33:32 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1576 ms
+2024-09-09 00:33:32 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-09 00:33:32 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-09 00:33:32 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-09 00:33:33 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-09 00:33:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-09 00:33:33 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f87780b
+2024-09-09 00:33:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-09 00:33:33 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-09 00:33:34 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-09 00:33:34 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 00:33:35 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Filter 'logFilter' configured for use
+2024-09-09 00:33:35 INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-09-09 00:33:35 WARN  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-09 00:33:35 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-09 00:33:36 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9191"]
+2024-09-09 00:33:36 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 9191 (http) with context path '/'
+2024-09-09 00:33:36 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Started KlbProjectApplication in 5.57 seconds (process running for 6.297)
+2024-09-09 00:33:39 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-09 00:33:39 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-09 00:33:39 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-09 00:33:39 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 54b430d4-1def-4e83-b4e2-285be90bcdad
+[PATH]: /api/v1/users/add
+[QUERIES]: null
+[HEADERS]: 
+---content-type : application/json
+---user-agent : PostmanRuntime/7.41.2
+---accept : */*
+---postman-token : eab7206d-6e4e-4740-8022-49c01a3a1b16
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---content-length : 111
+LOGGING REQUEST-----------------------------------
+
+2024-09-09 00:33:39 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [POST /api/v1/users/add]
+2024-09-09 00:33:39 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - REQUEST method=[POST] path=[/api/v1/users/add] headers=[{content-length=111, postman-token=eab7206d-6e4e-4740-8022-49c01a3a1b16, host=localhost:9191, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.41.2, accept=*/*}] body=[{
+  "firstName" : "",
+  "lastName" : "Test",
+  "email" : "emailtest5@email.com",
+  "password" : "123456"
+}]
+2024-09-09 00:33:39 WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.KLBproject.KLB_project.response.ResponseData<com.KLBproject.KLB_project.dto.UserDto> com.KLBproject.KLB_project.controller.UserController.createUser(com.KLBproject.KLB_project.request.CreateUserRequest): [Field error in object 'createUserRequest' on field 'firstName': rejected value []; codes [NotBlank.createUserRequest.firstName,NotBlank.firstName,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [createUserRequest.firstName,firstName]; arguments []; default message [firstName]]; default message [First Name must be not blank]] ]
+2024-09-09 00:33:39 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/v1/users/add, payload={
+    "firstName":"",
+    "lastName":"Test",
+    "email":"emailtest5@email.com",
+    "password":"123456"
+}]
+2024-09-09 00:33:39 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[POST] path=[/error] responseHeaders=[{X-Frame-Options=DENY, Cache-Control=no-cache, no-store, max-age=0, must-revalidate, X-Content-Type-Options=nosniff, Vary=Origin, Pragma=no-cache, Expires=0, X-XSS-Protection=0}] responseBody=[{
+  "timestamp" : 1725816819633,
+  "status" : 400,
+  "error" : "Bad Request",
+  "path" : "/api/v1/users/add"
+}]
+2024-09-09 00:42:08 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 00:42:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-09 00:42:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-09 00:55:28 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-09-09 00:55:28 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Starting KlbProjectApplication using Java 17.0.12 with PID 30856 (C:\Users\ADMIN\IdeaProjects\KLB-project\KLB-project\target\classes started by ADMIN in C:\Users\ADMIN\IdeaProjects\KLB-project)
+2024-09-09 00:55:28 INFO  com.KLBproject.KLB_project.KlbProjectApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-09 00:55:28 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-09 00:55:29 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 106 ms. Found 8 JPA repository interfaces.
+2024-09-09 00:55:29 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 9191 (http)
+2024-09-09 00:55:29 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9191"]
+2024-09-09 00:55:29 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-09 00:55:29 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-09-09 00:55:29 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-09 00:55:29 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1686 ms
+2024-09-09 00:55:30 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-09 00:55:30 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-09 00:55:30 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-09-09 00:55:30 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-09 00:55:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-09 00:55:30 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31531d0d
+2024-09-09 00:55:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-09 00:55:30 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-09 00:55:32 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-09 00:55:32 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 00:55:32 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Filter 'logFilter' configured for use
+2024-09-09 00:55:32 INFO  org.springframework.security.config.annotation.authentication.configuration.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2024-09-09 00:55:32 WARN  org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-09 00:55:33 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-09 00:55:33 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9191"]
+2024-09-09 00:55:33 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 9191 (http) with context path '/'
+2024-09-09 00:55:33 INFO  com.KLBproject.KLB_project.KlbProjectApplication - Started KlbProjectApplication in 5.804 seconds (process running for 6.667)
+2024-09-09 00:55:38 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-09 00:55:38 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-09 00:55:38 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-09 00:55:38 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.CustomURLFilter - 
+LOGGING REQUEST-----------------------------------
+[REQUEST-ID]: 2a29af41-9250-4259-8b38-e6f514374073
+[PATH]: /api/v1/users/add
+[QUERIES]: null
+[HEADERS]: 
+---content-type : application/json
+---user-agent : PostmanRuntime/7.41.2
+---accept : */*
+---postman-token : 7c52baf5-e3f0-4788-9f05-d8259a156cd9
+---host : localhost:9191
+---accept-encoding : gzip, deflate, br
+---connection : keep-alive
+---content-length : 111
+LOGGING REQUEST-----------------------------------
+
+2024-09-09 00:55:38 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - Before request [POST /api/v1/users/add]
+2024-09-09 00:55:38 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - REQUEST method=[POST] path=[/api/v1/users/add] headers=[{content-length=111, postman-token=7c52baf5-e3f0-4788-9f05-d8259a156cd9, host=localhost:9191, content-type=application/json, connection=keep-alive, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.41.2, accept=*/*}] body=[{
+  "firstName" : "",
+  "lastName" : "Test",
+  "email" : "emailtest5@email.com",
+  "password" : "123456"
+}]
+2024-09-09 00:55:39 INFO  com.KLBproject.KLB_project.security.config.LoggingConfig.LoggingServiceImpl - RESPONSE method=[POST] path=[/api/v1/users/add] responseHeaders=[{Vary=Origin}] responseBody=[{
+  "timestamp" : 1725818139026,
+  "status" : 400,
+  "path" : "=/api/v1/users/add",
+  "error" : "Payload Invalid",
+  "message" : "First Name must be not blank"
+}]
+2024-09-09 00:55:39 DEBUG org.springframework.web.filter.CommonsRequestLoggingFilter - REQUEST DATA : POST /api/v1/users/add, payload={
+    "firstName":"",
+    "lastName":"Test",
+    "email":"emailtest5@email.com",
+    "password":"123456"
+}]
+2024-09-09 01:00:43 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-09 01:00:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-09 01:00:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
